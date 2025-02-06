@@ -4,7 +4,7 @@ import Heading from "./Heading";
 export default function AmenitiesSection() {
   return (
     <div className="w-[90%] min-h-screen cursor-default space-y-10">
-      <div className="w-full text-center flex items-center justify-center flex-col space-y-2">
+      <div className="w-full flex items-start justify-start flex-col space-y-2">
         <Heading title="Our" spanText="Amenities" />
         <p className="text-platinium font-clash-grotesk text-lg font-medium w-[50%]">
           Enjoy clean locker rooms, steam rooms, a dedicated functional training

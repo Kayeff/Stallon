@@ -1,14 +1,8 @@
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
-import Section from "./components/Section";
 import { ReactLenis } from "lenis/react";
-import { lazy, Suspense } from "react";
-
-const Hero = lazy(() => import("./components/Hero"));
-const LocationSection = lazy(() => import("./components/LocationSection"));
-const ClassesSection = lazy(() => import("./components/ClassesSection"));
-const GallerySection = lazy(() => import("./components/GallerySection"));
-const AmenitiesSection = lazy(() => import("./components/AmenitiesSection"));
+import { Outlet } from "react-router-dom";
+import { Suspense } from "react";
 
 export default function App() {
   return (
@@ -20,21 +14,7 @@ export default function App() {
             <div className="text-white text-center py-10">Loading...</div>
           }
         >
-          <Section className="py-10 flex items-start justify-center">
-            <Hero />
-          </Section>
-          <Section className="border-y border-strong-green/20">
-            <LocationSection />
-          </Section>
-          <Section className="py-20 border-b border-strong-green/20">
-            <AmenitiesSection />
-          </Section>
-          <Section className="py-20 border-b border-strong-green/20">
-            <ClassesSection />
-          </Section>
-          <Section className="py-20 border-b border-strong-green/20">
-            <GallerySection />
-          </Section>
+          <Outlet />
         </Suspense>
         <Footer />
       </main>

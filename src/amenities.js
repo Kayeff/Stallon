@@ -22,7 +22,7 @@ export const amenities = [
       id: "a3",
       src: cardio,
       title: "Automatic Cardio Equipment",
-      para: "All our gyms are equipped with state-of-the-art automatic cardio machines, ensuring a seamless and efficient workout experience. From treadmills and ellipticals to stationary bikes, our high-tech equipment adjusts settings automatically for optimal performance, helping you track progress and maximize results effortlessly.",
+      para: "All our gyms are equipped with state-of-the-art automatic cardio machines, ensuring a seamless and efficient workout experience. From treadmills and ellipticals to stationary bikes, our high-tech equipment adjusts settings automatically for optimal performance.",
     },
     {
       id: "a4",
