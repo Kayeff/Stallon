@@ -1,0 +1,18 @@
+@import "tailwindcss";
+
+@font-face {
+    font-family: "Switzer";
+    src: url("./fonts/Switzer.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "Clash-Grotesk";
+    src: url("./fonts/ClashGrotesk-Variable.woff2") format("woff2");
+}
+
+@theme {
+    --font-clash-grotesk: "Clash-Grotesk";
+    --font-switzer: "Switzer";
+    --color-strong-green: #9AD342;
+    --color-platinium: #DEE5E5;
+}
