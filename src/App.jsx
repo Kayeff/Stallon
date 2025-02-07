@@ -6,8 +6,16 @@ import { Suspense } from "react";
 
 export default function App() {
   return (
-    <ReactLenis root>
-      <main className="w-full min-h-screen bg-black relative">
+    <ReactLenis
+      root
+      options={{
+        smooth: true,
+        duration: 1.2, // Adjust for better smoothness
+        easing: (t) => 1 - Math.pow(1 - t, 3), // Custom easing
+        syncTouch: true,
+      }}
+    >
+      <main className="w-full min-h-screen bg-black relative antialiased flex items-center justify-between flex-col">
         <Navbar />
         <Suspense
           fallback={

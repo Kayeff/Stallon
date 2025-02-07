@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 import hero from "../assets/hero.webp";
 import Heading from "./Heading";
 
@@ -18,12 +19,18 @@ export default function Hero() {
           </div>
         </div>
         <div className="space-x-4 font-medium">
-          <button className="px-6 py-3 cursor-pointer bg-platinium text-black border border-platinium hover:bg-platinium/15 hover:text-platinium transition-all duration-300">
+          <NavLink
+            to="/home"
+            className="px-6 py-4 cursor-pointer bg-platinium text-black border border-platinium hover:bg-platinium/15 hover:text-platinium transition-all duration-300"
+          >
             Explore more
-          </button>
-          <button className="px-6 py-3 border border-strong-green bg-strong-green text-black cursor-pointer hover:bg-strong-green/15 hover:text-platinium transition-all duration-300">
+          </NavLink>
+          <NavLink
+            to="/contact"
+            className="px-6 py-4 border border-strong-green bg-strong-green text-black cursor-pointer hover:bg-strong-green/15 hover:text-platinium transition-all duration-300"
+          >
             Join us today
-          </button>
+          </NavLink>
         </div>
       </div>
       <div className="h-full flex items-start justify-start">

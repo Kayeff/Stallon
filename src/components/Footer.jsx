@@ -1,28 +1,25 @@
 import { NavLink } from "react-router-dom";
 import logo from "../assets/logo.webp";
 import QuickLinks from "./QuickLinks";
-import {
-  RiFacebookCircleFill,
-  RiInstagramFill,
-  RiYoutubeFill,
-} from "@remixicon/react";
 
 export default function Footer() {
   return (
-    <footer className="w-full flex items-center justify-center flex-col space-y-10">
+    <footer className="w-full flex items-center justify-center flex-col space-y-10 border-t border-strong-green/20">
       <div className="w-[90%] grid grid-cols-2 py-10">
         <div className="flex items-start justify-start flex-col space-y-4">
-          <img className="h-24 object-cover" src={logo} alt="" />
+          <img className="h-24 object-cover" src={logo} alt="" loading="lazy" />
         </div>
-        <div className="grid grid-cols-3">
+        <div className="grid grid-cols-4">
           <QuickLinks title="Connect">
             <a
-              className="font-medium hover:text-strong-green duration-300 transition-colors"
+              className="hover:text-strong-green duration-300 transition-colors"
               href="tel:7096004208"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <span className="font-clash-grotesk">+91 7096004208</span>
+              <span className="font-clash-grotesk font-normal">
+                +91 7096004208
+              </span>
             </a>
             <a
               className="font-medium hover:text-strong-green duration-300 transition-colors"
@@ -30,7 +27,7 @@ export default function Footer() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <span className="font-clash-grotesk">
+              <span className="font-clash-grotesk font-normal">
                 stallongym111@gmail.com
               </span>
             </a>
@@ -67,16 +64,47 @@ export default function Footer() {
               Contact
             </NavLink>
           </QuickLinks>
-
+          <QuickLinks title="Branches">
+            <NavLink
+              to="/branches"
+              className="hover:text-strong-green duration-300"
+            >
+              Vesu
+            </NavLink>
+            <NavLink
+              to="/branches"
+              className="hover:text-strong-green duration-300"
+            >
+              Ghod Dod Road
+            </NavLink>
+            <NavLink
+              to="/branches"
+              className="hover:text-strong-green duration-300"
+            >
+              Adajan
+            </NavLink>
+            <NavLink
+              to="/branches"
+              className="hover:text-strong-green duration-300"
+            >
+              VIP Road
+            </NavLink>
+            <NavLink
+              to="/branches"
+              className="hover:text-strong-green duration-300"
+            >
+              Mota Varacha
+            </NavLink>
+          </QuickLinks>
           <QuickLinks title="Socials">
-            <div className="flex items-start justify-center space-x-2">
+            <div className="flex items-start justify-center flex-col space-y-2">
               <a
                 className="hover:text-strong-green duration-300 transition-colors"
                 href="https://www.instagram.com/stallon_gym_official/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <RiInstagramFill />
+                Instagram
               </a>
               <a
                 className="hover:text-strong-green duration-300 transition-colors"
@@ -84,7 +112,7 @@ export default function Footer() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <RiFacebookCircleFill />
+                Facebook
               </a>
               <a
                 className="hover:text-strong-green duration-300 transition-colors"
@@ -92,17 +120,25 @@ export default function Footer() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <RiYoutubeFill />
+                YouTube
               </a>
             </div>
           </QuickLinks>
         </div>
       </div>
-      <div className="border-t border-strong-green/20 w-[90%] py-4">
-        <div className="flex items-center justify-between cursor-default">
-          <h1 className="font-clash-grotesk text-platinium">
-            ©2025 Stallon Gym.
+      <div className="bg-strong-green w-full p-4 flex items-center justify-center">
+        <div className="w-[90%] flex items-center justify-between cursor-default">
+          <h1 className="font-clash-grotesk text-black font-medium">
+            ©2025 Stallon Gym
           </h1>
+          <div className="flex items-center justify-center space-x-4">
+            <h1 className="font-clash-grotesk text-black font-medium">
+              Privacy Policy
+            </h1>
+            <h1 className="font-clash-grotesk text-black font-medium">
+              Cookies
+            </h1>
+          </div>
         </div>
       </div>
     </footer>
