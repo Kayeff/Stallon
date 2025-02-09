@@ -38,7 +38,9 @@ export default function Branches() {
           {selectedBranch ? (
             <SelectedBranch branch={selectedBranch} />
           ) : (
-            "Select a branch to see details"
+            <h1 className="text-xl font-medium cursor-default">
+              Select a branch to see details
+            </h1>
           )}
         </div>
       </div>

@@ -1,5 +1,6 @@
 import Classes from "./Classes";
 import Heading from "./Heading";
+import { classes } from "../classes";
 
 export default function ClassesSection() {
   return (
@@ -13,7 +14,13 @@ export default function ClassesSection() {
           an ambitious competitor, we have the right course for you.
         </p>
       </div>
-      <Classes />
+      <div className="w-full p-4 flex items-center justify-center">
+        <div className="grid grid-cols-3 gap-4 w-[80%]">
+          {classes.map((item) => {
+            return <Classes key={item.id} item={item} />;
+          })}
+        </div>
+      </div>
     </div>
   );
 }

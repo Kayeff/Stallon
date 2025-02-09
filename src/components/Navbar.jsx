@@ -17,7 +17,7 @@ export default function Navbar() {
         <ul className="font-clash-grotesk flex items-center justify-center space-x-8">
           <NavbarLink href="/about" title="About" />
           <NavbarLink href="/branches" title="Branches" />
-          <NavbarLink href="/membership" title="Membership" />
+          <NavbarLink href="/pricing" title="Pricing" />
           <NavbarLink href="/blog" title="Blog" />
           <NavbarLink href="/contact" title="Contact" />
         </ul>

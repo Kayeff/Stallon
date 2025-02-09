@@ -1,18 +1,38 @@
 @import "tailwindcss";
 
 @font-face {
-    font-family: "Switzer";
-    src: url("./fonts/Switzer.woff2") format("woff2");
+  font-family: "Switzer";
+  src: url("./fonts/Switzer.woff2") format("woff2");
 }
 
 @font-face {
-    font-family: "Clash-Grotesk";
-    src: url("./fonts/ClashGrotesk-Variable.woff2") format("woff2");
+  font-family: "Clash-Grotesk";
+  src: url("./fonts/ClashGrotesk-Variable.woff2") format("woff2");
+}
+
+.gradient-background {
+  background: rgb(17, 27, 1);
+  background: radial-gradient(
+    circle,
+    rgba(17, 27, 1, 1) 0%,
+    rgba(0, 0, 0, 1) 100%
+  );
+}
+
+.swiper {
+  width: 50%;
+  height: 384px;
+}
+
+.swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 @theme {
-    --font-clash-grotesk: "Clash-Grotesk";
-    --font-switzer: "Switzer";
-    --color-strong-green: #9AD342;
-    --color-platinium: #DEE5E5;
+  --font-clash-grotesk: "Clash-Grotesk";
+  --font-switzer: "Switzer";
+  --color-strong-green: #9ad342;
+  --color-platinium: #dee5e5;
 }

@@ -7,9 +7,9 @@ import App from "./App.jsx";
 import Home from "./pages/Home.jsx";
 import About from "./pages/About.jsx";
 import Contact from "./pages/Contact.jsx";
-import Membership from "./pages/Membership.jsx";
 import Branches from "./pages/Branches.jsx";
 import Blog from "./pages/Blog.jsx";
+import Pricing from "./pages/Pricing.jsx";
 
 const router = createBrowserRouter([
   {
@@ -19,7 +19,7 @@ const router = createBrowserRouter([
       { index: true, element: <Home /> }, // Default page
       { path: "about", element: <About /> },
       { path: "branches", element: <Branches /> },
-      { path: "membership", element: <Membership /> },
+      { path: "pricing", element: <Pricing /> },
       { path: "blog", element: <Blog /> },
       { path: "contact", element: <Contact /> },
     ],

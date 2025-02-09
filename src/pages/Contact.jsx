@@ -6,6 +6,8 @@ import {
 import Heading from "../components/Heading";
 import SmallSection from "../components/SmallSection";
 import { branches } from "../branches";
+import LocationLink from "../components/LocationLink";
+import Form from "../components/Form";
 
 export default function Contact() {
   return (
@@ -26,24 +28,7 @@ export default function Contact() {
               className="w-full grid grid-cols-3 gap-2 px-2"
             >
               {branches.map((branch) => {
-                return (
-                  <div
-                    key={branch.id}
-                    className="flex items-start justify-start flex-col"
-                  >
-                    <h1 className="font-medium text-strong-green">
-                      <span className="text-platinium">Stallon</span>{" "}
-                      {branch.name}
-                    </h1>
-                    <a
-                      href={branch.link}
-                      target="_blank"
-                      className="font-medium space-x-1 hover:underline"
-                    >
-                      <span className="font-normal">{branch.address}</span>
-                    </a>
-                  </div>
-                );
+                return <LocationLink branch={branch} key={branch.id} />;
               })}
             </SmallSection>
             <div className="w-full flex items-start justify-start gap-8">
@@ -110,34 +95,7 @@ export default function Contact() {
               you as soon as possible!
             </p>
           </div>
-          <form className="w-[80%] flex items-center justify-center flex-col space-y-2 text-platinium">
-            <input
-              className="border border-strong-green/20 w-full px-4 py-3 outline-none font-clash-grotesk"
-              placeholder="Name"
-              type="text"
-            />
-            <input
-              className="border border-strong-green/20 w-full px-4 py-3 outline-none font-clash-grotesk"
-              placeholder="Email"
-              type="email"
-            />
-            <input
-              className="border border-strong-green/20 w-full px-4 py-3 outline-none font-clash-grotesk"
-              placeholder="Phone Number"
-              type="tel"
-              maxLength={10}
-            />
-            <textarea
-              className="border border-strong-green/20 w-full px-4 py-3 outline-none font-clash-grotesk resize-none h-40"
-              placeholder="Message"
-              maxLength={10}
-            />
-            <div className="w-full flex items-center justify-start py-4">
-              <button className="w-[50%] py-3 border border-strong-green cursor-pointer bg-strong-green text-black font-medium text-lg hover:bg-strong-green/10 hover:text-platinium duration-300">
-                Send it
-              </button>
-            </div>
-          </form>
+          <Form />
         </div>
       </div>
     </main>

@@ -6,6 +6,9 @@ const LocationSection = lazy(() => import("../components/LocationSection"));
 const ProgramSection = lazy(() => import("../components/ProgramSection"));
 const GallerySection = lazy(() => import("../components/GallerySection"));
 const AmenitiesSection = lazy(() => import("../components/AmenitiesSection"));
+const TestimonialSection = lazy(() =>
+  import("../components/TestimonialSection")
+);
 
 export default function Home() {
   return (
@@ -24,6 +27,9 @@ export default function Home() {
       </Section>
       <Section>
         <GallerySection />
+      </Section>
+      <Section>
+        <TestimonialSection />
       </Section>
     </>
   );

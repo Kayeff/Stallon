@@ -27,7 +27,7 @@ export default function TeamComponent({ team }) {
           <h1 className="text-xl">
             Branch Manager :{" "}
             <span className="text-strong-green font-medium">
-              {team.branchManager}
+              {team.branchManager.name}
             </span>
           </h1>
         </div>

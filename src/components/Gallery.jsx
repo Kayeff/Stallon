@@ -2,7 +2,7 @@ import { images } from "../gallery-data";
 
 export default function Gallery() {
   return (
-    <div className="grid grid-cols-4 gap-4 grid-flow-dense">
+    <div className="w-[90%] grid grid-cols-4 gap-4 grid-flow-dense">
       {images.map(({ src, span }, index) => (
         <div key={index} className={`${span}`}>
           <img

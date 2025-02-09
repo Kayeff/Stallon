@@ -1,5 +1,6 @@
 import TeamComponent from "./TeamComponent";
 import GymShowcase from "./GymShowcase";
+import BranchManager from "./BranchManager";
 
 export default function SelectedBranch({ branch }) {
   return (
@@ -24,6 +25,9 @@ export default function SelectedBranch({ branch }) {
           </div>
           <div className="w-full">
             <TeamComponent team={branch.team} />
+          </div>
+          <div className="w-full">
+            <BranchManager bm={branch.team.branchManager} />
           </div>
         </div>
       </div>
