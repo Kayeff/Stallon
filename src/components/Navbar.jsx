@@ -15,6 +15,7 @@ export default function Navbar() {
           <img className="h-12 object-cover" src={logo} alt="" />
         </NavLink>
         <ul className="font-clash-grotesk flex items-center justify-center space-x-8">
+          <NavbarLink href="/" title="Home" />
           <NavbarLink href="/about" title="About" />
           <NavbarLink href="/branches" title="Branches" />
           <NavbarLink href="/pricing" title="Pricing" />

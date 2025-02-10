@@ -4,7 +4,7 @@ import { classes } from "../classes";
 
 export default function ClassesSection() {
   return (
-    <div className="w-[90%] min-h-screen space-y-8 cursor-default">
+    <div className="w-[90%] space-y-8 cursor-default">
       <div className="w-full flex items-center justify-center flex-col space-y-2">
         <Heading title="Our" spanText="Programs" />
         <p className="text-platinium font-clash-grotesk text-lg font-medium w-[50%] text-center">

@@ -4,7 +4,7 @@ import { amenities } from "../amenities";
 
 export default function AmenitiesSection() {
   return (
-    <div className="w-[90%] min-h-screen cursor-default space-y-10 flex items-center justify-center flex-col">
+    <div className="w-[90%] cursor-default space-y-10 flex items-center justify-center flex-col">
       <div className="w-full flex items-center justify-center flex-col space-y-2">
         <Heading title="Our" spanText="Amenities" />
         <p className="text-platinium font-clash-grotesk text-lg font-medium w-[50%]">

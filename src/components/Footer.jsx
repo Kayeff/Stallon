@@ -7,7 +7,14 @@ export default function Footer() {
     <footer className="w-full flex items-center justify-center flex-col space-y-10 border-t border-strong-green/20">
       <div className="w-[90%] grid grid-cols-2 py-10">
         <div className="flex items-start justify-start flex-col space-y-4">
-          <img className="h-24 object-cover" src={logo} alt="" loading="lazy" />
+          <NavLink to="/" className="hover:text-strong-green duration-300">
+            <img
+              className="h-24 object-cover"
+              src={logo}
+              alt=""
+              loading="lazy"
+            />
+          </NavLink>
         </div>
         <div className="grid grid-cols-4">
           <QuickLinks title="Connect">

@@ -13,22 +13,20 @@ const TestimonialSection = lazy(() =>
 export default function Home() {
   return (
     <>
-      <Section className="py-10 flex items-start justify-center border-0">
+      <Section className="py-10 flex items-start justify-center">
         <Hero />
       </Section>
-      <Section className="border-0">
-        <LocationSection />
-      </Section>
-      <Section>
+      <LocationSection />
+      <Section className={"min-h-screen"}>
         <ProgramSection />
       </Section>
-      <Section>
+      <Section className={"min-h-screen"}>
         <AmenitiesSection />
       </Section>
-      <Section>
+      <Section className={"min-h-screen"}>
         <GallerySection />
       </Section>
-      <Section>
+      <Section className={"min-h-screen"}>
         <TestimonialSection />
       </Section>
     </>
