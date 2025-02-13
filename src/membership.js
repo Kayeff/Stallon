@@ -1,6 +1,12 @@
+import kickstart from "./assets/kickstart.svg";
+import conquer from "./assets/conquer.svg";
+import commit from "./assets/commit.svg";
+import transform from "./assets/transform.svg";
+
 export const membership_data = [
   {
     id: "plan1",
+    src: kickstart,
     title: "Kickstart",
     about: "Perfect for beginners or those looking for a short-term commitment",
     duration: 1,
@@ -32,6 +38,7 @@ export const membership_data = [
   {
     id: "plan2",
     title: "Commit",
+    src: commit,
     about: "A great option to build consistency & endurance.",
     duration: 3,
     extra: 0,
@@ -62,6 +69,7 @@ export const membership_data = [
   {
     id: "plan3",
     title: "Transform",
+    src: transform,
     about: "Ideal for those who are serious about change.",
     duration: 6,
     extra: 0,
@@ -92,6 +100,7 @@ export const membership_data = [
   {
     id: "plan4",
     title: "Conquer",
+    src: conquer,
     about: "The ultimate plan for long-term fitness & peak performance.",
     duration: 12,
     extra: 3,

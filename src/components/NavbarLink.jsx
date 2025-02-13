@@ -4,6 +4,7 @@ import { twMerge } from "tailwind-merge";
 export default function NavbarLink({ href, title }) {
   const location = useLocation();
   const isActive = location.pathname === href;
+
   return (
     <li className="">
       <NavLink

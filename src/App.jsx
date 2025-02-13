@@ -31,17 +31,16 @@ export default function App() {
           >
             <motion.div
               key={location.pathname}
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              exit={{ opacity: 0, y: -20 }}
-              transition={{ duration: 0.5, ease: "easeInOut" }}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              transition={{ duration: 1, ease: "easeInOut" }}
               className="w-full"
             >
               <Outlet />
             </motion.div>
           </Suspense>
         </AnimatePresence>
-
         <Footer />
       </main>
     </ReactLenis>

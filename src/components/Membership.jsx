@@ -5,12 +5,13 @@ export default function Membership({ plan }) {
   const totalMonth = plan.extra + plan.duration;
   const totalPrice = Math.ceil(((plan.price / totalMonth) * 100) / 100);
   return (
-    <div className="border border-strong-green/20 gradient-background min-h-96 space-y-10 flex items-center justify-between flex-col">
-      <div className="w-full flex flex-col space-y-4">
-        <h1 className="uppercase font-semibold text-4xl p-2 px-6 bg-strong-green text-black ">
+    <div className="border border-strong-green/20 gradient-background min-h-96 space-y-10 flex items-center justify-between flex-col ">
+      <div className="w-full flex flex-col items-center justify-center space-y-2 p-6">
+        <img className="h-20" src={plan.src} alt="" />
+        <h1 className="uppercase font-semibold text-4xl  text-strong-green ">
           {plan.title}
         </h1>
-        <p className="tracking-wide px-6">{plan.about}</p>
+        <p className="tracking-wide text-center">{plan.about}</p>
       </div>
       <div className="w-full px-6 space-y-8">
         <div className="w-full flex items-start justify-center flex-col">

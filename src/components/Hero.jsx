@@ -23,7 +23,7 @@ export default function Hero() {
             to="/branches"
             className="px-6 py-4 cursor-pointer bg-platinium text-black border border-platinium hover:bg-platinium/15 hover:text-platinium transition-all duration-300"
           >
-            Explore more
+            See our Branches
           </NavLink>
           <NavLink
             to="/contact"
