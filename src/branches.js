@@ -157,11 +157,11 @@ export const branches = [
     address:
       "Udhana - Magdalla Rd, Someshwar Square,Opp. Someshwar Enclave, Vesu, Surat, Gujarat 395007",
     showcase: [
-      { span: "col-span-1", src: vesuGym },
-      { span: "col-span-2", src: vesuFrontDesk },
+      { span: "col-span-2 tablet-xs:col-span-1", src: vesuGym },
+      { span: "col-span-2 tablet-xs:col-span-1", src: vesuFrontDesk },
       { span: "col-span-2", src: vesuGymDesk },
-      { span: "col-span-1", src: vesuEquipment1 },
-      { span: "col-span-1", src: vesuEquipment3 },
+      { span: "col-span-2 tablet-xs:col-span-1", src: vesuEquipment1 },
+      { span: "col-span-2 tablet-xs:col-span-1", src: vesuEquipment3 },
       { span: "col-span-2", src: vesuEquipment2 },
     ],
     manager: {
@@ -176,11 +176,11 @@ export const branches = [
     address:
       "2nd floor, Regent Square, Regent Arcade, Ghod Dod Rd, Surat, Gujarat 395007",
     showcase: [
-      { span: "col-span-1", src: ghoddodroad2 },
-      { span: "col-span-2", src: ghoddodroad1 },
+      { span: "col-span-2 tablet-xs:col-span-1", src: ghoddodroad2 },
+      { span: "col-span-2 tablet-xs:col-span-1", src: ghoddodroad1 },
       { span: "col-span-2", src: ghoddodroad3 },
-      { span: "col-span-1", src: ghoddodequipment },
-      { span: "col-span-1", src: ghoddodroad5 },
+      { span: "col-span-2 tablet-xs:col-span-1", src: ghoddodequipment },
+      { span: "col-span-2 tablet-xs:col-span-1", src: ghoddodroad5 },
       { span: "col-span-2 object-top", src: ghoddodfrontDesk },
     ],
   },
@@ -192,11 +192,11 @@ export const branches = [
     address:
       "1st floor, Riddhi Shoppers building, Opp. Star Bazar, Maher Nager, Jalaram Society, Adajan Gam, Adajan, Surat, Gujarat 395009",
     showcase: [
-      { span: "col-span-1", src: adajanEquipments },
-      { span: "col-span-2", src: adajanFrontDesk },
+      { span: "col-span-2 tablet-xs:col-span-1", src: adajanEquipments },
+      { span: "col-span-2 tablet-xs:col-span-1", src: adajanFrontDesk },
       { span: "col-span-2", src: adajanGym1 },
-      { span: "col-span-1", src: groupWorkout },
-      { span: "col-span-1", src: adajanGym2 },
+      { span: "col-span-2 tablet-xs:col-span-1", src: groupWorkout },
+      { span: "col-span-2 tablet-xs:col-span-1", src: adajanGym2 },
       { span: "col-span-2", src: carpetArea },
     ],
   },
@@ -208,10 +208,17 @@ export const branches = [
     address:
       "4th Floor, Western Shoppers, VIP Road, opp. Metro Mall, Anand Park, Althan, Surat, Gujarat 395017",
     showcase: [
-      { span: "col-span-1", src: viproadequipment1 },
-      { span: "col-span-2 object-top", src: viproadequipment4 },
+      {
+        span: "col-span-2 tablet-xs:col-span-1",
+        src: viproadequipment1,
+      },
+      {
+        span: "col-span-2 tablet-xs:col-span-1 object-top",
+        src: viproadequipment4,
+      },
       { span: "col-span-2", src: viproadequipment3 },
-      { span: "col-span-1", src: viproadequipment2 },
+      { span: "col-span-2 tablet-xs:col-span-1", src: viproadequipment2 },
+      { span: "col-span-2 tablet-xs:col-span-1", src: vip },
     ],
   },
   {
@@ -222,11 +229,11 @@ export const branches = [
     address:
       "Raghuvir Shoppers, near Lajamni Chowk, Mota Varachha, Surat, Gujarat 394101",
     showcase: [
-      { span: "col-span-1", src: varachaEquipment },
-      { span: "col-span-2", src: varachaGym },
+      { span: "col-span-2 tablet-xs:col-span-1", src: varachaEquipment },
+      { span: "col-span-2 tablet-xs:col-span-1", src: varachaGym },
       { span: "col-span-2 object-top", src: varachaEquipment2 },
-      { span: "col-span-1", src: varacha4 },
-      { span: "col-span-1", src: varachaConsult },
+      { span: "col-span-2 tablet-xs:col-span-1", src: varacha4 },
+      { span: "col-span-2 tablet-xs:col-span-1", src: varachaConsult },
       { span: "col-span-2", src: varacha2 },
     ],
   },

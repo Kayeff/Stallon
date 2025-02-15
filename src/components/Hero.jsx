@@ -4,37 +4,44 @@ import Heading from "./Heading";
 
 export default function Hero() {
   return (
-    <div className="w-[90%] grid grid-cols-2 gap-10 font-clash-grotesk">
-      <div className="flex items-end justify-start flex-col space-y-4">
-        <div className="flex items-end justify-start flex-col cursor-default">
-          <Heading title="Train" spanText="Hard." />
-          <Heading title="Stay" spanText="Strong." />
-          <Heading title="Be" spanText="Unstoppable." />
-          <div className="w-full">
-            <p className="font-medium text-lg text-platinium">
+    <div className="w-full laptop:w-[90%] grid tablet-xs:grid-cols-2 font-clash-grotesk p-6 gap-8 cursor-default">
+      <div className="flex items-start justify-start flex-col space-y-4">
+        <div className="flex items-end justify-start flex-col">
+          <div className="flex items-end justify-start flex-col">
+            <Heading title="Train" spanText="Hard." />
+            <Heading title="Stay" spanText="Strong." />
+            <Heading title="Be" spanText="Unstoppable." />
+          </div>
+          <div className="w-full flex items-center justify-end">
+            <p className="font-medium text-platinium text-xs mobile-m:text-sm tablet-xs:text-sm tablet:text-sm laptop:text-base laptop-l:text-lg laptop-4k:w-[80%] laptop-4k:text-2xl">
               From strength training and functional workouts to cardio and group
               sessions, we have everything you need to transform your body and
               mind. Take the first step towards a healthier and stronger you!
             </p>
           </div>
         </div>
-        <div className="space-x-4 font-medium">
+        <div className="space-x-3 font-medium w-full flex items-center justify-center tablet:justify-start laptop:justify-end">
           <NavLink
             to="/branches"
-            className="px-6 py-4 cursor-pointer bg-platinium text-black border border-platinium hover:bg-platinium/15 hover:text-platinium transition-all duration-300"
+            className="cursor-pointer bg-platinium text-black border border-platinium hover:bg-platinium/15 hover:text-platinium transition-all duration-300 px-3 py-2 text-xs mobile-l:px-4 mobile-l:py-3 tablet:text-sm laptop:text-sm laptop:px-4 laptop:py-3 laptop-l:px-5 laptop-l:py-4 laptop-l:text-base"
           >
             See our Branches
           </NavLink>
           <NavLink
             to="/contact"
-            className="px-6 py-4 border border-strong-green bg-strong-green text-black cursor-pointer hover:bg-strong-green/15 hover:text-platinium transition-all duration-300"
+            className="border border-strong-green bg-strong-green text-black cursor-pointer hover:bg-strong-green/15 hover:text-strong-green transition-all duration-300 px-3 py-2 text-xs mobile-l:py-3 mobile-l:px-4 tablet:text-sm laptop:text-sm laptop:px-4 laptop:py-3 laptop-l:px-5 laptop-l:py-4 laptop-l:text-base"
           >
             Join us today
           </NavLink>
         </div>
       </div>
-      <div className="h-full flex items-start justify-start">
-        <img src={hero} alt="hero_image" loading="lazy" />
+      <div className="w-full overflow-hidden">
+        <img
+          className="h-full w-full max-w-full object-cover laptop:h-96 laptop-4k:h-[30rem]"
+          src={hero}
+          alt="hero_image"
+          loading="lazy"
+        />
       </div>
     </div>
   );

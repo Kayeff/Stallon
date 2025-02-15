@@ -11,15 +11,23 @@ export default function Testimonial({ item }) {
             <img className="h-6" key={index} src={star} />
           ))}
         </div>
-        <h1 className="text-xl">"{item.para}"</h1>
+        <h1 className="text-base laptop:text-xl laptop-4k:text-2xl">
+          "{item.para}"
+        </h1>
       </div>
       <div className="w-full flex items-center justify-start space-x-3">
         <div>
-          <img className="h-12 w-12 rounded-full" src={item.imgAdd} alt="" />
+          <img
+            className="h-10 w-10 rounded-full laptop-4k:h-16 laptop-4k:w-16"
+            src={item.imgAdd}
+            alt=""
+          />
         </div>
         <div className="flex items-start justify-center flex-col -space-y-1">
-          <h1 className="font-medium text-strong-green text-lg">{item.name}</h1>
-          <p className="text-platinium/70 tracking-wider text-sm">
+          <h1 className="font-medium text-strong-green text-lg laptop:text-xl laptop-4k:text-2xl">
+            {item.name}
+          </h1>
+          <p className="text-platinium/70 tracking-wider text-sm laptop-4k:text-xl">
             {item.time}
           </p>
         </div>

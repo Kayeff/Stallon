@@ -1,24 +1,17 @@
 import Location from "./Location";
 import SpanText from "./SpanText";
-
-const branches = [
-  { id: "b1", title: "Ghod Dod Road" },
-  { id: "b2", title: "Mota Varacha" },
-  { id: "b3", title: "VIP Road" },
-  { id: "b4", title: "Adajan" },
-  { id: "b5", title: "Vesu" },
-];
+import { branches } from "../branches";
 
 export default function LocationSection() {
   return (
-    <div className="flex items-center justify-center cursor-default border-y border-strong-green/20">
-      <div className="w-[90%] flex items-center justify-center ">
-        <div className="flex items-center justify-end px-10">
-          <h1 className="text-platinium text-3xl uppercase font-clash-grotesk font-medium text-end">
-            Our Locations in <SpanText text="Surat" />
-          </h1>
-        </div>
-        <div className="w-[75%] grid grid-cols-5 border-l border-strong-green/20">
+    <div className="flex items-center justify-center flex-col cursor-default py-10">
+      <div className="w-[90%] flex items-center justify-center p-4">
+        <h1 className="text-2xl text-platinium uppercase font-clash-grotesk font-medium text-center tablet-xs:text-start mobile-l:text-2xl laptop:text-4xl">
+          Our Locations in <SpanText text="Surat" />
+        </h1>
+      </div>
+      <div className="w-[90%] flex items-center justify-center">
+        <div className="grid grid-cols-1 tablet-xs:grid-cols-2 laptop:grid-cols-5">
           {branches.map((branch) => (
             <Location key={branch.id} branch={branch} />
           ))}

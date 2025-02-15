@@ -20,15 +20,15 @@ const TestimonialSection = memo(function TestimonialSection() {
   );
 
   return (
-    <div className="w-[90%] flex flex-col items-center space-y-8 overflow-hidden">
+    <div className="w-[90%] flex flex-col items-center justify-center space-y-8 overflow-hidden">
       <div className="w-full flex flex-col items-center space-y-2">
         <Heading title={"Members"} spanText="Testimonials" />
-        <p className="text-platinium font-clash-grotesk text-lg font-medium max-w-lg mx-auto text-center">
+        <p className="text-platinium font-clash-grotesk font-medium text-start w-[90%] tablet:w-[60%] text-xs mobile-m:text-sm tablet-xs:text-sm tablet:text-sm laptop:text-base laptop-l:text-lg laptop-4k:text-2xl laptop-4k:w-[50%]">
           At Stallon Gym, we’re proud to be a part of our members’ fitness
           journeys. Here’s what they have to say about their experience with us!
         </p>
       </div>
-      <div className="w-[80%] p-2 flex items-center justify-center">
+      <div className="w-full mobile-l:w-[90%] flex items-center justify-center">
         <Swiper
           slidesPerView={1}
           spaceBetween={30}

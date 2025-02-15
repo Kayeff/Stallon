@@ -22,7 +22,7 @@ export default function Branches() {
         <div className="w-full flex items-start justify-center flex-col">
           <Heading title={"our"} spanText={"Branches"} />
         </div>
-        <div className="w-full grid grid-cols-5 gap-4">
+        <div className="grid grid-cols-2 tablet-xs:grid-cols-3 laptop:grid-cols-5 gap-2">
           {branches.map((branch) => (
             <Branch
               selectedBranchID={selectedBranchID}
@@ -50,7 +50,7 @@ export default function Branches() {
               <SelectedBranch branch={selectedBranch} />
             </motion.div>
           ) : (
-            <h1 className="text-xl font-medium cursor-default">
+            <h1 className="text-sm text-platinium/80 cursor-default">
               Select a branch to see details
             </h1>
           )}

@@ -4,8 +4,8 @@ import Section from "../components/Section";
 const Hero = lazy(() => import("../components/Hero"));
 const LocationSection = lazy(() => import("../components/LocationSection"));
 const ProgramSection = lazy(() => import("../components/ProgramSection"));
-const GallerySection = lazy(() => import("../components/GallerySection"));
 const AmenitiesSection = lazy(() => import("../components/AmenitiesSection"));
+const GallerySection = lazy(() => import("../components/GallerySection"));
 const TestimonialSection = lazy(() =>
   import("../components/TestimonialSection")
 );
@@ -13,20 +13,20 @@ const TestimonialSection = lazy(() =>
 export default function Home() {
   return (
     <>
-      <Section className="py-10 flex items-start justify-center">
+      <Section className="laptop:py-10">
         <Hero />
       </Section>
       <LocationSection />
-      <Section className={"min-h-screen"}>
+      <Section className="min-h-screen py-10">
         <ProgramSection />
       </Section>
-      <Section className={"min-h-screen"}>
+      <Section className="min-h-screen py-10">
         <AmenitiesSection />
       </Section>
-      <Section className={"min-h-screen"}>
+      <Section className="min-h-screen py-10">
         <GallerySection />
       </Section>
-      <Section className={"min-h-screen"}>
+      <Section className="min-h-screen flex items-center justify-center">
         <TestimonialSection />
       </Section>
     </>
