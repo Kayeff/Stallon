@@ -23,7 +23,7 @@ export default function Home() {
       <Section className="min-h-screen py-10">
         <AmenitiesSection />
       </Section>
-      <Section className="min-h-screen py-10">
+      <Section className="min-h-screen">
         <GallerySection />
       </Section>
       <Section className="min-h-screen flex items-center justify-center">

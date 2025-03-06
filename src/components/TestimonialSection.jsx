@@ -1,4 +1,4 @@
-import React, { memo, useMemo } from "react";
+import { useMemo } from "react";
 import Heading from "./Heading";
 import Testimonial from "./Testimonial";
 import { testimonial_data } from "../testimonial";
@@ -8,7 +8,7 @@ import { EffectCards, Virtual } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/effect-cards";
 
-const TestimonialSection = memo(function TestimonialSection() {
+export default function TestimonialSection() {
   const slides = useMemo(
     () =>
       testimonial_data.map((item) => (
@@ -44,6 +44,4 @@ const TestimonialSection = memo(function TestimonialSection() {
       </div>
     </div>
   );
-});
-
-export default TestimonialSection;
+}

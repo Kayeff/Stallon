@@ -5,7 +5,8 @@ export default function Amenities({ item }) {
         <img
           className="w-full h-80 object-cover laptop-4k:h-[30rem]"
           src={item.src}
-          alt=""
+          alt={item.title}
+          loading="lazy"
         />
       </div>
       <div className="w-full space-y-2 flex items-start justify-center flex-col p-5">

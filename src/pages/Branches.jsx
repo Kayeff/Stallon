@@ -7,7 +7,6 @@ import { motion } from "framer-motion";
 
 export default function Branches() {
   const [selectedBranchID, setSelectedBranchID] = useState(null);
-
   const selectedBranch = branches.find(
     (branch) => branch.id === selectedBranchID
   );

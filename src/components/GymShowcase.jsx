@@ -1,6 +1,7 @@
+import { memo } from "react";
 import Images from "./Images";
 
-export default function GymShowcase({ showcase }) {
+const GymShowcase = memo(function GymShowcase({ showcase }) {
   return (
     <div className="w-full flex justify-center items-center flex-col border border-strong-green/20 duration-300 transition-all">
       <div className="w-full flex items-center justify-start flex-col cursor-default p-4 space-y-8 laptop:py-10">
@@ -15,4 +16,6 @@ export default function GymShowcase({ showcase }) {
       </div>
     </div>
   );
-}
+});
+
+export default GymShowcase;

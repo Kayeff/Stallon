@@ -6,7 +6,7 @@ export default function SelectedBranch({ branch }) {
   return (
     <section className="w-full space-y-10 flex items-center justify-center flex-col">
       <div className="w-full flex items-center justify-center flex-col">
-        <h1 className="max-mobile-l:text-2xl font-semibold uppercase font-clash-grotesk text-platinium text-3xl max-tablet:text-3xl laptop:text-3xl laptop-l:text-5xl max-laptop-l:text-4xl">
+        <h1 className="max-mobile-l:text-2xl font-semibold uppercase font-clash-grotesk text-platinium text-3xl max-tablet:text-3xl laptop:text-3xl laptop-l:text-5xl max-laptop-l:text-4xl text-center">
           Stallon <span className="text-strong-green">{branch.name}</span>{" "}
           branch
         </h1>

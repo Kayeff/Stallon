@@ -4,7 +4,7 @@ import Heading from "../components/Heading";
 export default function About() {
   return (
     <main className="w-full min-h-screen flex items-center justify-start flex-col py-10">
-      <div className="w-[90%] text-strong-green cursor-default flex items-center justify-center flex-col space-y-4">
+      <div className="w-[90%] text-strong-green cursor-default flex items-center justify-center flex-col space-y-10">
         <div className="w-full flex items-center justify-center flex-col">
           <Heading title={"About"} spanText={"Us"} />
         </div>

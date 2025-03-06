@@ -16,8 +16,7 @@ export default function Menu({ isVisible, toggleMenu }) {
             exit={{ opacity: 0, scale: 0.8 }}
             transition={{ duration: 0.5 }}
           >
-            <RiMenu3Fill className="h-5 w-5 xs:w-6 xs:h-6" />{" "}
-            {/* Responsive size */}
+            <RiMenu3Fill className="h-5 w-5 xs:w-6 xs:h-6" />
           </motion.span>
         ) : (
           <motion.span

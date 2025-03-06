@@ -6,7 +6,6 @@ export default function Images({ index, span, src }) {
         src={src}
         alt={`Gym ${index + 1}`}
         loading="lazy"
-        decoding="async"
       />
     </div>
   );

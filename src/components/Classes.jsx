@@ -8,7 +8,6 @@ export default function Classes({ item }) {
         src={item.src}
         alt={item.title}
         loading="lazy"
-        decoding="async"
       />
       <div className="w-full flex items-center justify-end p-2">
         <h1 className="uppercase font-semibold text-3xl font-clash-grotesk text-platinium text-end flex items-end justify-center flex-col laptop:text-4xl laptop-l:text-5xl laptop-4k:text-6xl">
