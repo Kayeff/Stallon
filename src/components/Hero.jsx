@@ -1,10 +1,11 @@
 import { NavLink } from "react-router-dom";
 import hero from "../assets/hero.webp";
 import Heading from "./Heading";
+import Para from "./Para";
 
 export default function Hero() {
   return (
-    <div className="w-full laptop:w-[90%] grid tablet-xs:grid-cols-2 font-clash-grotesk p-6 gap-8 cursor-default">
+    <div className="w-full laptop:w-[90%] grid tablet-xs:grid-cols-2 font-clash-grotesk px-6 gap-8 cursor-default">
       <div className="flex items-start justify-start flex-col space-y-4">
         <div className="flex items-end justify-start flex-col">
           <div className="flex items-end justify-start flex-col">
@@ -13,11 +14,11 @@ export default function Hero() {
             <Heading title="Be" spanText="Unstoppable." />
           </div>
           <div className="w-full flex items-center justify-end">
-            <p className="font-medium text-platinium text-xs mobile-m:text-sm tablet-xs:text-sm tablet:text-sm laptop:text-base laptop-l:text-lg laptop-4k:w-[80%] laptop-4k:text-2xl">
-              From strength training and functional workouts to cardio and group
+            <Para
+              text="From strength training and functional workouts to cardio and group
               sessions, we have everything you need to transform your body and
-              mind. Take the first step towards a healthier and stronger you!
-            </p>
+              mind. Take the first step towards a healthier and stronger you!"
+            />
           </div>
         </div>
         <div className="space-x-3 font-medium w-full flex items-center justify-center tablet:justify-start laptop:justify-end">

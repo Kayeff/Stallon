@@ -8,41 +8,40 @@ import SmallSection from "../components/SmallSection";
 import { branches } from "../branches";
 import LocationLink from "../components/LocationLink";
 import Form from "../components/Form";
+import Para from "../components/Para";
 
 export default function Contact() {
   return (
-    <main className="w-full min-h-screen flex items-center justify-start flex-col py-10 space-y-4 font-clash-grotesk text-platinium cursor-default">
-      <div className="w-[90%] grid grid-cols-2 gap-8">
-        <div className="flex items-start justify-start flex-col space-y-4 p-4">
-          <div className="w-[90%] flex items-start justify-center flex-col">
+    <main className="w-full flex items-center justify-start flex-col py-10 font-clash-grotesk text-platinium cursor-default">
+      <div className="w-[90%] grid grid-cols-1 gap-8 laptop:grid-cols-2 laptop:w-[90%] text-platinium pb-10">
+        <div className="flex items-center justify-start laptop:items-start flex-col space-y-8 p-2 w-full">
+          <div className="w-[90%] flex items-center laptop:items-start justify-center flex-col space-y-2">
             <Heading title={"Get in"} spanText={"Touch"} />
-          </div>
-          <p className="text-xl tracking-wide">
-            We're here to help you on your fitness journey! Whether you have
+            <Para
+              text="We're here to help you on your fitness journey! Whether you have
             questions about our memberships, training programs, or facilities,
-            feel free to reach out.
-          </p>
-          <div className="w-full space-y-4">
+            feel free to reach out."
+            />
+          </div>
+          <div className="w-full space-y-8">
             <SmallSection
               title="Our Branches"
-              className="w-full grid grid-cols-3 gap-2 px-2"
+              className="w-full grid grid-cols-1 tablet:grid-cols-3 gap-4"
             >
               {branches.map((branch) => {
                 return <LocationLink branch={branch} key={branch.id} />;
               })}
             </SmallSection>
-            <div className="w-full flex items-start justify-start gap-8">
+            <div className="w-full grid grid-cols-1 tablet:grid-cols-2 gap-8">
               <SmallSection title="Phone or Mail us">
-                <div className="flex items-start justify-start flex-col px-2 space-y-1">
+                <div className="flex items-start justify-start flex-col space-y-1">
                   <a
                     className="hover:text-strong-green duration-300 transition-colors"
                     href="tel:7096004208"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <span className="font-clash-grotesk font-normal">
-                      +91 7096004208
-                    </span>
+                    <span>+91 7096004208</span>
                   </a>
                   <a
                     className="font-medium hover:text-strong-green duration-300 transition-colors"
@@ -50,14 +49,12 @@ export default function Contact() {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <span className="font-clash-grotesk font-normal">
-                      stallongym111@gmail.com
-                    </span>
+                    <span>stallongym111@gmail.com</span>
                   </a>
                 </div>
               </SmallSection>
               <SmallSection title="Follow us">
-                <div className="flex items-start justify-start space-x-3">
+                <div className="flex items-start justify-start space-x-2">
                   <a
                     className="hover:text-strong-green duration-300 transition-colors"
                     href="https://www.instagram.com/stallon_gym_official/"
@@ -87,13 +84,13 @@ export default function Contact() {
             </div>
           </div>
         </div>
-        <div className="w-full flex items-center justify-start flex-col space-y-8 p-4">
-          <div className="w-full space-y-4">
+        <div className="w-full flex items-center justify-start flex-col space-y-8 p-2">
+          <div className="w-full flex items-center laptop:items-start justify-start flex-col space-y-4">
             <Heading title="Send us a" spanText="Message" />
-            <p className="text-xl tracking-wide">
-              Have a question? Fill out the form below, and we'll get back to
-              you as soon as possible!
-            </p>
+            <Para
+              text="Have a question? Fill out the form below, and we'll get back to
+              you as soon as possible!"
+            />
           </div>
           <Form />
         </div>

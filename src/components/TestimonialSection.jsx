@@ -7,6 +7,7 @@ import { EffectCards, Virtual } from "swiper/modules";
 
 import "swiper/css";
 import "swiper/css/effect-cards";
+import Para from "./Para";
 
 export default function TestimonialSection() {
   const slides = useMemo(
@@ -23,10 +24,13 @@ export default function TestimonialSection() {
     <div className="w-[90%] flex flex-col items-center justify-center space-y-8 overflow-hidden">
       <div className="w-full flex flex-col items-center space-y-2">
         <Heading title={"Members"} spanText="Testimonials" />
-        <p className="text-platinium font-clash-grotesk font-medium text-start w-[90%] tablet:w-[60%] text-xs mobile-m:text-sm tablet-xs:text-sm tablet:text-sm laptop:text-base laptop-l:text-lg laptop-4k:text-2xl laptop-4k:w-[50%]">
-          At Stallon Gym, we’re proud to be a part of our members’ fitness
-          journeys. Here’s what they have to say about their experience with us!
-        </p>
+        <div className="w-full tablet:w-[80%] laptop:w-[60%]">
+          <Para
+            text="At Stallon Gym, we’re proud to be a part of our members’ fitness
+            journeys. Here’s what they have to say about their experience with
+            us!"
+          />
+        </div>
       </div>
       <div className="w-full mobile-l:w-[90%] flex items-center justify-center">
         <Swiper

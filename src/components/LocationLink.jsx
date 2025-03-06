@@ -1,7 +1,7 @@
 export default function LocationLink({ branch }) {
   return (
-    <div key={branch.id} className="flex items-start justify-start flex-col">
-      <h1 className="font-medium text-strong-green">
+    <div className="flex items-start justify-start flex-col">
+      <h1 className="font-medium text-strong-green uppercase">
         <span className="text-platinium">Stallon</span> {branch.name}
       </h1>
       <a

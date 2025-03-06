@@ -13,7 +13,7 @@ const TestimonialSection = lazy(() =>
 export default function Home() {
   return (
     <>
-      <Section className="laptop:py-10">
+      <Section className="laptop:py-10  max-laptop:py-5">
         <Hero />
       </Section>
       <LocationSection />
