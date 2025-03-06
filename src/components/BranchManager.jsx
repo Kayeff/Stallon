@@ -16,7 +16,6 @@ export default function BranchManager({ bm }) {
             src={bm.pic}
             alt={`${bm.name}`}
             loading="lazy"
-            decoding="async"
           />
         </div>
         <div className="w-full flex items-center tablet-xs:items-start justify-start flex-col space-y-2">

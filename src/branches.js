@@ -83,8 +83,8 @@ const vipRoadTeam = {
 
 const adajanTeam = {
   frontDesk: "Divya Solanki",
-  generalTrainer: ["Sagar Nayak", "Jenish Amdavadi"],
-  personalTrainer: ["Shaan Sharma", " Divyang More", "Jenish Solanki"],
+  generalTrainer: "Sagar Nayak, Jenish Amdavadi",
+  personalTrainer: "Shaan Sharma, Divyang More, Jenish Solanki",
   branchManager: {
     name: "Pavan Rana",
     pic: adajanBM,
