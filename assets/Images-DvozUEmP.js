@@ -1,1 +1,0 @@
-import{j as o}from"./index-CjYDgSt5.js";function s({index:a,src:l}){return o.jsx("img",{className:"w-full h-full object-cover will-change-transform",src:l,alt:`Gym ${a+1}`,loading:"lazy"})}export{s as I};
