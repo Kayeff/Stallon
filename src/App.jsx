@@ -18,7 +18,7 @@ export default function App() {
         easing: (t) => 1 - Math.pow(1 - t, 2),
         syncTouch: true,
         smoothTouch: true,
-        touchMultiplier: 1.5,
+        autoRaf: true,
       }}
     >
       <main className="w-full min-h-screen bg-black relative flex items-center justify-between flex-col">

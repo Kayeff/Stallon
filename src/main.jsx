@@ -1,15 +1,15 @@
-import { StrictMode } from "react";
+import { StrictMode, lazy, Suspense } from "react";
 import { createRoot } from "react-dom/client";
 import { createHashRouter, RouterProvider } from "react-router-dom";
 import "./index.css";
-
 import App from "./App.jsx";
-import Home from "./pages/Home.jsx";
-import About from "./pages/About.jsx";
-import Contact from "./pages/Contact.jsx";
-import Branches from "./pages/Branches.jsx";
-import Blog from "./pages/Blog.jsx";
-import Pricing from "./pages/Pricing.jsx";
+
+const Home = lazy(() => import("./pages/Home.jsx"));
+const About = lazy(() => import("./pages/About.jsx"));
+const Branches = lazy(() => import("./pages/Branches.jsx"));
+const Pricing = lazy(() => import("./pages/Pricing.jsx"));
+const Blog = lazy(() => import("./pages/Blog.jsx"));
+const Contact = lazy(() => import("./pages/Contact.jsx"));
 
 const router = createHashRouter([
   {
@@ -28,6 +28,8 @@ const router = createHashRouter([
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <RouterProvider router={router} />
+    <Suspense fallback={<div>Loading...</div>}>
+      <RouterProvider router={router} />
+    </Suspense>
   </StrictMode>
 );

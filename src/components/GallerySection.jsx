@@ -1,6 +1,7 @@
-import Gallery from "./Gallery";
 import Heading from "./Heading";
 import Para from "./Para";
+import { images } from "../gallery-data";
+import Images from "./Images";
 
 export default function GallerySection() {
   return (
@@ -16,7 +17,11 @@ export default function GallerySection() {
         </div>
       </div>
       <div className="w-full mobile-l:w-[90%] flex items-center justify-center">
-        <Gallery />
+        <div className="grid grid-cols-1 gap-2 tablet-xs:grid-cols-3 laptop:w-[80%] laptop-l:w-[80%] laptop-4k:w-[60%] grid-flow-dense">
+          {images.map(({ src }, index) => (
+            <Images key={index} index={index} src={src} />
+          ))}
+        </div>
       </div>
     </div>
   );

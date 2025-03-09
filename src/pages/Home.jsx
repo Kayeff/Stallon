@@ -2,7 +2,6 @@ import { lazy } from "react";
 import Section from "../components/Section";
 
 const Hero = lazy(() => import("../components/Hero"));
-const LocationSection = lazy(() => import("../components/LocationSection"));
 const ProgramSection = lazy(() => import("../components/ProgramSection"));
 const AmenitiesSection = lazy(() => import("../components/AmenitiesSection"));
 const GallerySection = lazy(() => import("../components/GallerySection"));
@@ -16,14 +15,13 @@ export default function Home() {
       <Section className="laptop:py-10  max-laptop:py-5">
         <Hero />
       </Section>
-      <LocationSection />
       <Section className="min-h-screen py-10">
         <ProgramSection />
       </Section>
       <Section className="min-h-screen py-10">
         <AmenitiesSection />
       </Section>
-      <Section className="min-h-screen">
+      <Section className="min-h-screen py-10">
         <GallerySection />
       </Section>
       <Section className="min-h-screen flex items-center justify-center">

@@ -1,6 +1,14 @@
-export default function Amenities({ item }) {
+import { motion } from "framer-motion";
+
+export default function Amenities({ item, index }) {
   return (
-    <div className="w-full flex items-center justify-start flex-col text-platinium border border-strong-green/20 ">
+    <motion.div
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.5, ease: "easeInOut", delay: 0.1 * index }}
+      className="w-full flex items-center justify-start flex-col text-platinium border border-strong-green/20 "
+    >
       <div className="w-full flex items-start justify-center">
         <img
           className="w-full h-80 object-cover laptop-4k:h-[30rem]"
@@ -17,6 +25,6 @@ export default function Amenities({ item }) {
           {item.para}
         </p>
       </div>
-    </div>
+    </motion.div>
   );
 }
