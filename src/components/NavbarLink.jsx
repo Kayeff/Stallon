@@ -10,7 +10,6 @@ const itemVariants = {
 export default function NavbarLink({ href, title }) {
   const location = useLocation();
   const isActive = location.pathname === href;
-  console.log(location.pathname);
 
   return (
     <AnimatePresence>

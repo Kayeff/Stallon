@@ -1,6 +1,6 @@
 import { AnimatePresence } from "framer-motion";
 import { Route, Routes, useLocation, Navigate } from "react-router-dom";
-import { lazy, Suspense } from "react";
+import { lazy } from "react";
 import PageWrapper from "./PageWrapper.jsx";
 
 const Home = lazy(() => import("../pages/Home.jsx"));
@@ -9,10 +9,6 @@ const Branches = lazy(() => import("../pages/Branches.jsx"));
 const Pricing = lazy(() => import("../pages/Pricing.jsx"));
 const Blog = lazy(() => import("../pages/Blog.jsx"));
 const Contact = lazy(() => import("../pages/Contact.jsx"));
-
-function NotFound() {
-  return <h1 className="text-platinium">404 not found</h1>;
-}
 
 export default function AnimateRoutes() {
   const location = useLocation();
@@ -24,22 +20,17 @@ export default function AnimateRoutes() {
           path="/"
           index={true}
           element={
-            <Suspense>
-              <PageWrapper>
-                <Home />
-              </PageWrapper>
-            </Suspense>
+            <PageWrapper>
+              <Home />
+            </PageWrapper>
           }
         />
-        <Route path="/" element={<Navigate to="/home" replace />} />
         <Route
           path="/about"
           element={
-            <Suspense>
-              <PageWrapper>
-                <About />
-              </PageWrapper>
-            </Suspense>
+            <PageWrapper>
+              <About />
+            </PageWrapper>
           }
         />
         <Route
@@ -71,14 +62,6 @@ export default function AnimateRoutes() {
           element={
             <PageWrapper>
               <Contact />
-            </PageWrapper>
-          }
-        />
-        <Route
-          path="*"
-          element={
-            <PageWrapper>
-              <NotFound />
             </PageWrapper>
           }
         />
