@@ -10,16 +10,18 @@ const itemVariants = {
 export default function NavbarLink({ href, title }) {
   const location = useLocation();
   const isActive = location.pathname === href;
+  console.log(location.pathname);
 
   return (
     <AnimatePresence>
       <motion.h1 variants={itemVariants} className="xl:text-lg">
         <NavLink
+          to={href}
           className={twMerge(
             "text-4xl font-semibold hover:text-strong-green transition-colors duration-300 uppercase tablet:capitalize tablet:text-base tablet:font-medium laptop:text-lg laptop-l:text-xl laptop-4k:text-2xl",
             isActive && "text-strong-green"
           )}
-          to={href}
+          end
         >
           {title}
         </NavLink>
