@@ -1,5 +1,5 @@
 import { AnimatePresence } from "framer-motion";
-import { Route, Routes, useLocation, Navigate } from "react-router-dom";
+import { Route, Routes, useLocation } from "react-router-dom";
 import { lazy } from "react";
 import PageWrapper from "./PageWrapper.jsx";
 
@@ -14,7 +14,7 @@ export default function AnimateRoutes() {
   const location = useLocation();
 
   return (
-    <AnimatePresence mode="wait">
+    <AnimatePresence mode="wait" key={location.pathname}>
       <Routes location={location} key={location.pathname}>
         <Route
           path="/"
