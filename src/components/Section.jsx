@@ -1,7 +1,7 @@
 import { twMerge } from "tailwind-merge";
 import { memo } from "react";
 
-const Section = memo(function Section({ children, className }) {
+export default function Section({ children, className }) {
   return (
     <section
       className={`${twMerge(
@@ -12,6 +12,4 @@ const Section = memo(function Section({ children, className }) {
       {children}
     </section>
   );
-});
-
-export default Section;
+}

@@ -10,8 +10,8 @@ export default function LocationSection() {
       </div>
       <div className="w-[90%] flex items-center justify-center overflow-hidden">
         <div className="grid grid-cols-1 tablet-xs:grid-cols-2 laptop:grid-cols-5">
-          {branches.map((branch, index) => (
-            <Location key={branch.id} index={index} branch={branch} />
+          {branches.map((branch) => (
+            <Location key={`branch-${branch.id}`} branch={branch} />
           ))}
         </div>
       </div>

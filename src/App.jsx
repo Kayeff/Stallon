@@ -10,10 +10,8 @@ export default function App() {
       root
       options={{
         smooth: true,
-        duration: 0.4,
-        easing: (t) => 1 - Math.pow(1 - t, 2),
-        syncTouch: true,
-        smoothTouch: true,
+        duration: 0.7,
+        easing: (t) => 1 - Math.pow(1 - t, 3),
         autoRaf: true,
       }}
     >

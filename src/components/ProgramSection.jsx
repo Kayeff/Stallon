@@ -14,8 +14,8 @@ export default function ProgramSection() {
       </div>
       <div className="w-full mobile-l:w-[90%] flex items-center justify-center">
         <div className="grid grid-cols-1 gap-4 tablet-xs:grid-cols-3 laptop:w-[80%] laptop-l:w-[80%] laptop-4k:w-[60%]">
-          {classes.map((item, index) => {
-            return <Classes key={item.id} item={item} index={index} />;
+          {classes.map((item) => {
+            return <Classes key={`program-${item.id}`} item={item} />;
           })}
         </div>
       </div>

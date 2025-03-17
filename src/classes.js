@@ -6,10 +6,10 @@ import recovery from "./assets/recovery.webp";
 import adajanGym from "./assets/adajan-gym.webp";
 
 export const classes = [
-  { id: "c1", spanText: "Personal", src: pt, title: "Training" },
-  { id: "c2", spanText: "Strength", src: strengthT, title: "Training" },
-  { id: "c3", spanText: "Weight", src: weightGain, title: "Gain" },
-  { id: "c4", spanText: "Weight", src: weightLoss, title: "Loss" },
-  { id: "c5", spanText: "Cardio", src: adajanGym, title: "Session" },
-  { id: "c6", spanText: "Recovery", src: recovery, title: "Session" },
+  { id: 1, spanText: "Personal", src: pt, title: "Training" },
+  { id: 2, spanText: "Strength", src: strengthT, title: "Training" },
+  { id: 3, spanText: "Weight", src: weightGain, title: "Gain" },
+  { id: 4, spanText: "Weight", src: weightLoss, title: "Loss" },
+  { id: 5, spanText: "Cardio", src: adajanGym, title: "Session" },
+  { id: 6, spanText: "Recovery", src: recovery, title: "Session" },
 ];

@@ -18,8 +18,8 @@ export default function GallerySection() {
       </div>
       <div className="w-full mobile-l:w-[90%] flex items-center justify-center">
         <div className="grid grid-cols-1 gap-2 tablet-xs:grid-cols-3 laptop:w-[80%] laptop-l:w-[80%] laptop-4k:w-[60%] grid-flow-dense">
-          {images.map(({ src }, index) => (
-            <Images key={index} index={index} src={src} />
+          {images.map((img) => (
+            <Images key={`image-${img.id}`} src={img.src} />
           ))}
         </div>
       </div>

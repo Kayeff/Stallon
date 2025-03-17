@@ -34,7 +34,7 @@ export default function Hero() {
           <div className="flex items-end justify-start flex-col">
             {heroHeadings.map((heading) => (
               <Heading
-                key={heading.id}
+                key={`hero-${heading.id}`}
                 title={heading.title}
                 spanText={heading.spanText}
               />
@@ -68,7 +68,6 @@ export default function Hero() {
           className="h-full w-full max-w-full object-cover laptop:h-96 laptop-4k:h-[30rem]"
           src={hero}
           alt="hero_image"
-          loading="lazy"
         />
       </div>
       <LocationSection />

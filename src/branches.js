@@ -150,7 +150,7 @@ const ghoddodroadTeam = {
 
 export const branches = [
   {
-    id: "branch1",
+    id: 1,
     name: "Vesu",
     team: vesuTeam,
     link: "https://maps.app.goo.gl/vVPeS8NT2ShJ5Fqx5",
@@ -169,7 +169,7 @@ export const branches = [
     },
   },
   {
-    id: "branch2",
+    id: 2,
     name: "Ghod Dod Road",
     team: ghoddodroadTeam,
     link: "https://maps.app.goo.gl/jqDT8crS52HPXeRL6",
@@ -185,7 +185,7 @@ export const branches = [
     ],
   },
   {
-    id: "branch3",
+    id: 3,
     name: "Adajan",
     team: adajanTeam,
     link: "https://maps.app.goo.gl/V7PC5kScVHL6kGmg6",
@@ -201,7 +201,7 @@ export const branches = [
     ],
   },
   {
-    id: "branch4",
+    id: 4,
     name: "VIP Road",
     team: vipRoadTeam,
     link: "https://maps.app.goo.gl/zfCf4xBa6k1buq4v5",
@@ -222,7 +222,7 @@ export const branches = [
     ],
   },
   {
-    id: "branch5",
+    id: 5,
     name: "Mota Varacha",
     team: varachaTeam,
     link: "https://maps.app.goo.gl/vVPeS8NT2ShJ5Fqx5",

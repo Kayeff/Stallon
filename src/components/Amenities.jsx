@@ -1,12 +1,12 @@
 import { motion } from "framer-motion";
 
-export default function Amenities({ item, index }) {
+export default function Amenities({ item }) {
   return (
     <motion.div
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       viewport={{ once: true }}
-      transition={{ duration: 0.5, ease: "easeInOut", delay: 0.1 * index }}
+      transition={{ duration: 0.7, ease: "easeInOut", delay: 0.1 }}
       className="w-full flex items-center justify-start flex-col text-platinium border border-strong-green/20 "
     >
       <div className="w-full flex items-start justify-center">

@@ -18,8 +18,8 @@ export default function AmenitiesSection() {
       </div>
       <div className="w-full mobile-l:w-[90%] flex items-center justify-center">
         <div className="w-full laptop:w-[80%] laptop-l:w-[80%] laptop-4k:w-[60%] grid grid-cols-1 tablet-xs:grid-cols-3 grid-flow-dense gap-4">
-          {amenities.map((item, index) => {
-            return <Amenities item={item} key={item.id} index={index} />;
+          {amenities.map((item) => {
+            return <Amenities item={item} key={`amenities-${item.id}`} />;
           })}
         </div>
       </div>
