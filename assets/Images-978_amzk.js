@@ -1,1 +1,0 @@
-import{j as o}from"./index-BfaSf0Cc.js";function e({index:a,src:l}){return o("img",{className:"w-full h-full object-cover will-change-transform",src:l,alt:`Gym ${a+1}`,loading:"lazy"})}export{e as I};
