@@ -3,7 +3,7 @@ import Heading from "./Heading";
 import Testimonial from "./Testimonial";
 import { testimonial_data } from "../testimonial";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { EffectCards, Virtual } from "swiper/modules";
+import { Pagination, Navigation } from "swiper/modules";
 
 import "swiper/css";
 import "swiper/css/effect-cards";
@@ -13,7 +13,7 @@ export default function TestimonialSection() {
   const slides = useMemo(
     () =>
       testimonial_data.map((item) => (
-        <SwiperSlide key={item.id}>
+        <SwiperSlide key={`testimonial-${item.id}`}>
           <Testimonial item={item} />
         </SwiperSlide>
       )),
@@ -21,31 +21,35 @@ export default function TestimonialSection() {
   );
 
   return (
-    <div className="w-[90%] flex flex-col items-center justify-center space-y-8 overflow-hidden">
-      <div className="w-full flex flex-col items-center space-y-2">
+    <section className="w-full flex flex-col items-center justify-center gap-8 overflow-x-hidden">
+      <div className="w-full flex flex-col items-center justify-center gap-2 text-center">
         <Heading title={"Members"} spanText="Testimonials" />
-        <div className="w-full tablet:w-[80%] laptop:w-[60%]">
-          <Para
-            text="At Stallon Gym, we’re proud to be a part of our members’ fitness
+        <Para
+          text="At Stallon Gym, we’re proud to be a part of our members’ fitness
             journeys. Here’s what they have to say about their experience with
             us!"
-          />
-        </div>
+        />
       </div>
-      <div className="w-full mobile-l:w-[90%] flex items-center justify-center">
+      {/* Swiper Container */}
+      <div className="w-full flex items-center justify-center p-2 overflow-x-hidden">
         <Swiper
           slidesPerView={1}
-          spaceBetween={30}
-          centeredSlides={true}
-          effect={"cards"}
-          direction="horizontal"
-          modules={[EffectCards, Virtual]}
-          className="mySwiper"
-          virtual
+          spaceBetween={10}
+          loop={true}
+          pagination={{ clickable: true }}
+          navigation={true}
+          modules={[Pagination, Navigation]}
+          breakpoints={{
+            320: { slidesPerView: 1, spaceBetween: 5 },
+            640: { slidesPerView: 1, spaceBetween: 10 },
+            768: { slidesPerView: 2, spaceBetween: 10 },
+            1024: { slidesPerView: 3, spaceBetween: 10 },
+          }}
+          className="max-w-[80vw] md:max-w-[80vw] lg:max-w-[70vw] xl:max-w-[60vw]"
         >
           {slides}
         </Swiper>
       </div>
-    </div>
+    </section>
   );
 }

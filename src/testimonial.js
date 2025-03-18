@@ -1,6 +1,6 @@
 export const testimonial_data = [
   {
-    id: "t1",
+    id: 1,
     imgAdd:
       "https://lh3.googleusercontent.com/a-/ACB-R5RW-4RcpqufE8gg8C8n7vYCivjH9YcdjX9H-0BB=w60-h60-p-rp-mo-br100",
     name: "Abhishek Kumar",
@@ -9,7 +9,7 @@ export const testimonial_data = [
     stars: 4.5,
   },
   {
-    id: "t2",
+    id: 2,
     imgAdd:
       "https://lh3.googleusercontent.com/a-/ACB-R5SIXO17AF1SyzGRtRhbQ09Mo1IbnRdx2UiO5oBovw=w60-h60-p-rp-mo-ba2-br100",
     name: "Shashibhan Pandey",
@@ -18,7 +18,7 @@ export const testimonial_data = [
     stars: 5,
   },
   {
-    id: "t3",
+    id: 3,
     imgAdd:
       "https://lh3.googleusercontent.com/a-/ACB-R5T-CcL-Llg8Z8NFPN7WqCiEOD6i4UQByxI5KcqKNQ=w60-h60-p-rp-mo-br100",
     name: "Jenish Trivedi",
@@ -27,7 +27,7 @@ export const testimonial_data = [
     stars: 5,
   },
   {
-    id: "t4",
+    id: 4,
     imgAdd:
       "https://lh3.googleusercontent.com/a-/ACB-R5T78WPYnKUG9X8zpDyPeWK3dZsihoUv2T9i8CllqQ=w60-h60-p-rp-mo-br100",
     name: "Dinesh Ahir",
@@ -36,7 +36,7 @@ export const testimonial_data = [
     stars: 5,
   },
   {
-    id: "t5",
+    id: 5,
     imgAdd:
       "https://lh3.googleusercontent.com/a-/ACB-R5ROWeTp5_rNt8SvqjssXF2y17jD8J63YTTzTQQ18Rs=w60-h60-p-rp-mo-ba2-br100",
     name: "Ruthvik Shah",

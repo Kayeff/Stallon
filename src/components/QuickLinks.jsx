@@ -1,6 +1,6 @@
 export default function QuickLinks({ title, children }) {
   return (
-    <div className="flex items-start justify-start flex-col font-clash-grotesk text-platinium cursor-default w-full py-10">
+    <div className="flex items-start justify-start flex-col font-clash-grotesk text-platinium cursor-default w-full">
       <div className="space-y-1 lg:space-y-2">
         <h1 className="uppercase font-medium tracking-wide text-strong-green/80 text-sm laptop:text-base laptop-l:text-lg laptop-4k:text-2xl">
           {title}

@@ -10,12 +10,12 @@ export default function App() {
       root
       options={{
         smooth: true,
-        duration: 0.7,
-        easing: (t) => 1 - Math.pow(1 - t, 3),
+        duration: 0.5,
+        easing: (t) => 1 - Math.pow(1 - t, 2),
         autoRaf: true,
       }}
     >
-      <main className="w-full min-h-screen bg-black relative flex items-center justify-between flex-col">
+      <main className="w-full min-h-screen bg-black relative flex items-center flex-col">
         <ScrollToTop />
         <Navbar />
         <AnimateRoutes />

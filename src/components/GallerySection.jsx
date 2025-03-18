@@ -5,21 +5,19 @@ import Images from "./Images";
 
 export default function GallerySection() {
   return (
-    <div className="w-[90%] flex flex-col items-center justify-center space-y-8 cursor-default">
-      <div className="w-full flex items-center justify-center flex-col space-y-2">
+    <div className="w-full flex flex-col items-center justify-center gap-8 cursor-default">
+      <div className="w-full flex items-center justify-center flex-col gap-2">
         <Heading title="Gym" spanText="Showcase" />
-        <div className="w-full tablet:w-[80%] laptop:w-[60%]">
-          <Para
-            text="Whether you're a beginner or a seasoned athlete, we provide top-notch
+        <Para
+          text="Whether you're a beginner or a seasoned athlete, we provide top-notch
           equipment, expert trainers, and a motivating environment to help you
           achieve your fitness goals."
-          />
-        </div>
+        />
       </div>
-      <div className="w-full mobile-l:w-[90%] flex items-center justify-center">
-        <div className="grid grid-cols-1 gap-2 tablet-xs:grid-cols-3 laptop:w-[80%] laptop-l:w-[80%] laptop-4k:w-[60%] grid-flow-dense">
+      <div className="w-full flex items-center justify-center">
+        <div className="w-full grid grid-cols-1 gap-2">
           {images.map((img) => (
-            <Images key={`image-${img.id}`} src={img.src} />
+            <Images key={`image-${img.id}`} img={img} />
           ))}
         </div>
       </div>

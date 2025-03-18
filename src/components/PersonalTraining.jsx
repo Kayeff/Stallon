@@ -15,7 +15,6 @@ export default function PersonalTraining({ plan }) {
     });
   }
 
-  console.log(trainerLVL);
   return (
     <div className="border border-strong-green/20 gradient-background min-h-96 space-y-6 flex items-center justify-start flex-col p-6">
       <div className="w-full flex flex-col items-center justify-center space-y-2">

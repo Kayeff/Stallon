@@ -4,10 +4,13 @@ import QuickLinks from "./QuickLinks";
 
 export default function Footer() {
   return (
-    <footer className="w-full flex items-start justify-center flex-col space-y-10 border-t border-strong-green/20 laptop:items-center">
-      <div className="laptop:w-[90%] w-full py-8 px-6 grid grid-cols-1 tablet-xs:grid-cols-2 gap-10">
-        <div className="flex items-center justify-start flex-col space-y-4 tablet-xs:items-start">
-          <NavLink to="/" className="hover:text-strong-green duration-300">
+    <footer className="w-full flex items-start justify-center flex-col gap-10 border-t border-strong-green/20 laptop:items-center">
+      <div className="laptop:w-[90%] w-full grid grid-cols-1 tablet:grid-cols-2 gap-5 p-4">
+        <div className="flex items-center justify-start flex-col gap-4 tablet-xs:items-start">
+          <NavLink
+            to="/"
+            className="hover:text-strong-green duration-300 flex items-center justify-center tablet:justify-start w-full"
+          >
             <img
               className="h-12 object-cover laptop:h-20 laptop-4k:h-32"
               src={logo}
@@ -36,7 +39,7 @@ export default function Footer() {
             </a>
           </QuickLinks>
         </div>
-        <div className="w-full grid grid-cols-1 tablet-xs:grid-cols-3 gap-8 sm:gap-8">
+        <div className="w-full grid grid-cols-1 tablet:grid-cols-3 gap-4 sm:gap-8">
           <QuickLinks title="Quick Links">
             <NavLink
               to="/about"

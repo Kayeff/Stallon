@@ -1,14 +1,6 @@
-import { twMerge } from "tailwind-merge";
-import { memo } from "react";
-
-export default function Section({ children, className }) {
+export default function Section({ children }) {
   return (
-    <section
-      className={`${twMerge(
-        "w-full flex items-start justify-center max-w-full overflow-x-hidden",
-        className
-      )}`}
-    >
+    <section className="w-full flex items-center justify-center max-w-full overflow-x-hidden">
       {children}
     </section>
   );
