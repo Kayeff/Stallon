@@ -23,6 +23,46 @@
   background: url("./assets/hero.webp") no-repeat center center/cover;
 }
 
+/* Pagination Dots */
+.custom-swiper .swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  background-color: var(--color-platinium);
+  border-radius: 50%;
+  opacity: 0.9;
+  transition: all 0.3s ease-in-out;
+}
+
+.custom-swiper .swiper-pagination-bullet-active {
+  background: var(--color-strong-green);
+  transform: scale(1.2);
+  opacity: 1;
+}
+
+/* Navigation Buttons */
+.custom-swiper .swiper-button-next,
+.custom-swiper .swiper-button-prev {
+  color: var(--color-platinium);
+  font-size: 24px;
+  transition: all 0.3s ease;
+}
+
+.custom-swiper .swiper-button-next:hover,
+.custom-swiper .swiper-button-prev:hover {
+  color: var(--color-strong-green);
+}
+
+.custom-swiper .swiper-button-next::after,
+.custom-swiper .swiper-button-prev::after {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+body::selection {
+  background-color: var(--color-strong-green);
+  color: black;
+}
+
 @theme {
   --font-clash-grotesk: "Clash-Grotesk";
   --font-switzer: "Switzer";
@@ -38,3 +78,7 @@
   --breakpoint-laptop-l: 1440px;
   --breakpoint-laptop-4k: 2560px;
 }
+
+/* * {
+  outline: 1px solid red;
+} */

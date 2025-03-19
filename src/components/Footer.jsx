@@ -135,7 +135,7 @@ export default function Footer() {
         </div>
       </div>
       <div className="bg-strong-green w-full px-6 py-4 flex items-center justify-center">
-        <div className="laptop:w-[90%] w-full flex items-center justify-center flex-col tablet-xs:flex-row space-y-1 cursor-default xs:space-y-0 tablet-xs:justify-between">
+        <div className="laptop:w-[90%] w-full flex items-center justify-center flex-col tablet:flex-row tablet:justify-between">
           <h1 className="font-clash-grotesk text-black font-medium">
             ©2025 Stallon Gym
           </h1>

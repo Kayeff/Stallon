@@ -20,7 +20,7 @@ export default function Navbar() {
 
   return (
     <nav className="w-full text-platinium bg-black/90 flex items-center justify-center backdrop-blur-sm sticky top-0 left-0 z-10">
-      <div className="w-full mx-auto p-4 flex items-center justify-between z-30">
+      <div className="w-full laptop:w-[90%] p-4 flex items-center justify-between z-30">
         <NavLink to={"/"} className="">
           <img
             className="h-8 object-cover xs:h-10 md:h-8 laptop:h-10"
@@ -28,7 +28,7 @@ export default function Navbar() {
             alt=""
           />
         </NavLink>
-        <ul className="hidden font-clash-grotesk items-center justify-center">
+        <ul className="hidden font-clash-grotesk items-center justify-center tablet:flex gap-4 laptop:gap-8">
           <NavbarLink href="/" title="Home" />
           <NavbarLink href="/about" title="About" />
           <NavbarLink href="/branches" title="Branches" />

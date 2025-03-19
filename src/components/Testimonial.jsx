@@ -4,7 +4,7 @@ export default function Testimonial({ item }) {
   const stars = calcStars(item.stars);
 
   return (
-    <div className="w-full font-clash-grotesk p-4 text-platinium flex items-start justify-between flex-col gap-6 gradient-background border border-strong-green/20 h-96">
+    <div className="w-full font-clash-grotesk text-platinium flex items-start justify-between flex-col gap-6 gradient-background border border-strong-green/20 h-96 p-6">
       <div className="w-full flex flex-col gap-2">
         <div className="w-full flex items-start justify-start">
           {stars.map((star, index) => (

@@ -13,7 +13,9 @@ export default function Amenities({ item }) {
         <h1 className="font-semibold text-2xl uppercase text-strong-green">
           {item.title}
         </h1>
-        <p className="w-full font-clash-grotesk text-sm">{item.para}</p>
+        <p className="w-full font-clash-grotesk text-sm laptop:text-base">
+          {item.para}
+        </p>
       </div>
     </div>
   );
