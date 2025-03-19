@@ -7,7 +7,7 @@ export default function LocationLink({ branch }) {
       <a
         href={branch.link}
         target="_blank"
-        className="font-medium space-x-1 hover:underline"
+        className="font-medium gap-1 hover:underline"
       >
         <span className="font-normal">{branch.address}</span>
       </a>

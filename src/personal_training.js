@@ -8,8 +8,7 @@ export const pt_data = [
     id: "plan1",
     title: "Beginner",
     img: beginner,
-    about:
-      "Start your fitness journey with expert guidance, personalized workouts, and the right techniques to build a strong base.",
+    about: "Start your fitness journey with expert guidance.",
     duration: 1,
     trainer: [
       { level: "level 1", price: 5000 },
@@ -20,8 +19,7 @@ export const pt_data = [
     id: "plan2",
     img: intermediate,
     title: "Intermediate",
-    about:
-      "Take your training to the next level with structured programs designed to improve strength, endurance, and performance.",
+    about: "Take your training to the next level.",
     duration: 3,
     trainer: [
       { level: "level 1", price: 12000 },
@@ -32,8 +30,7 @@ export const pt_data = [
     id: "plan3",
     img: advanced,
     title: "Advanced",
-    about:
-      "Push your limits with high-intensity training, advanced techniques, and specialized coaching for maximum results.",
+    about: "Push your limits with high-intensity training.",
     duration: 6,
     trainer: [
       { level: "level 1", price: 22000 },
@@ -44,8 +41,7 @@ export const pt_data = [
     id: "plan4",
     img: proChamp,
     title: "ProChamp",
-    about:
-      "Achieve elite fitness with tailored coaching, performance tracking, and next-level training designed for champions.",
+    about: "Achieve elite fitness with tailored coaching.",
     duration: 12,
     trainer: [
       { level: "level 1", price: 40000 },
