@@ -10,7 +10,7 @@ export default function Amenities({ item }) {
         />
       </div>
       <div className="w-full gap-1 flex justify-center flex-col p-2">
-        <h1 className="font-semibold text-2xl uppercase text-strong-green">
+        <h1 className="font-medium text-3xl uppercase text-strong-green">
           {item.title}
         </h1>
         <p className="w-full font-clash-grotesk text-sm laptop:text-base">

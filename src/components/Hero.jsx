@@ -1,6 +1,7 @@
 import { NavLink } from "react-router-dom";
 import Heading from "./Heading";
 import Para from "./Para";
+import hero from "../assets/hero.webp";
 
 export default function Hero() {
   return (
@@ -37,7 +38,12 @@ export default function Hero() {
           </div>
         </div>
         <div className="w-full flex items-center justify-center">
-          <div className="hero-bg w-full h-72 laptop:h-96"></div>
+          <img
+            rel="preload"
+            src={hero}
+            className="w-full h-96 object-cover"
+            loading="lazy"
+          />
         </div>
       </div>
     </div>

@@ -9,7 +9,7 @@ export const amenities = [
   {
     id: 1,
     src: carpetArea,
-    title: "Carpet Area",
+    title: "Vast Carpet Area",
     para: "Our gym spans an impressive 5,000 to 8,000 sq. ft. of carpet area, providing ample space for a comfortable and unrestricted workout experience.",
   },
   {
@@ -21,7 +21,7 @@ export const amenities = [
   {
     id: 3,
     src: cardio,
-    title: "Automatic Cardio Equipment",
+    title: "Automatic Cardio Equipments",
     para: "All our gyms are equipped with state-of-the-art automatic cardio machines, ensuring a seamless and efficient workout experience.",
   },
   {

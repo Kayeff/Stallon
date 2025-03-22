@@ -10,6 +10,6 @@ export const classes = [
   { id: 2, spanText: "Strength", src: strengthT, title: "Training" },
   { id: 3, spanText: "Weight", src: weightGain, title: "Gain" },
   { id: 4, spanText: "Weight", src: weightLoss, title: "Loss" },
-  { id: 5, spanText: "Cardio", src: adajanGym, title: "Session" },
-  { id: 6, spanText: "Recovery", src: recovery, title: "Session" },
+  { id: 5, spanText: "Cardio", src: adajanGym, title: "Sessions" },
+  { id: 6, spanText: "Recovery", src: recovery, title: "Sessions" },
 ];

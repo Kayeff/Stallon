@@ -8,7 +8,7 @@ export default function Membership({ plan }) {
     <div className="border border-strong-green/20 gradient-background gap-10 flex flex-col min-h-96 w-full">
       <div className="w-full h-full flex items-center justify-between flex-col gap-10 p-4">
         <div className="w-full flex flex-col items-center justify-center gap-2">
-          <img className="h-20" src={plan.src} alt="" />
+          <img className="h-20" src={plan.src} alt="logo" loading="lazy" />
           <h1 className="uppercase font-semibold text-3xl text-strong-green ">
             {plan.title}
           </h1>

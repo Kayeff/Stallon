@@ -13,7 +13,7 @@ export default function TeamComponent({ team }) {
   return (
     <div className="w-full flex justify-center items-center flex-col border border-strong-green/20">
       <div className="w-full flex items-center justify-start flex-col p-4 gap-4">
-        <h1 className="text-2xl laptop:text-3xl font-semibold uppercase font-clash-grotesk text-platinium text-center">
+        <h1 className="text-2xl laptop:text-4xl font-medium uppercase font-clash-grotesk text-platinium text-center">
           Our Team
         </h1>
         <div className="w-full flex items-center justify-center">
@@ -21,6 +21,7 @@ export default function TeamComponent({ team }) {
             className="w-full mobile-l:h-60 tablet:w-96 laptop:w-[60%] laptop:h-96 object-cover"
             src={team.pic}
             alt={"Team pic"}
+            loading="lazy"
           />
         </div>
         <div className="w-full flex items-center justify-center flex-col">

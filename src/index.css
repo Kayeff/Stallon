@@ -1,13 +1,9 @@
 @import "tailwindcss";
 
 @font-face {
-  font-family: "Switzer";
-  src: url("./fonts/Switzer.woff2") format("woff2");
-}
-
-@font-face {
   font-family: "Clash-Grotesk";
   src: url("./fonts/ClashGrotesk-Variable.woff2") format("woff2");
+  font-display: swap;
 }
 
 .gradient-background {
@@ -17,10 +13,6 @@
     rgba(17, 27, 1, 1) 0%,
     rgba(0, 0, 0, 1) 100%
   );
-}
-
-.hero-bg {
-  background: url("./assets/hero.webp") no-repeat center center/cover;
 }
 
 /* Pagination Dots */
@@ -65,7 +57,6 @@ body::selection {
 
 @theme {
   --font-clash-grotesk: "Clash-Grotesk";
-  --font-switzer: "Switzer";
   --color-strong-green: #9ad342;
   --color-platinium: #dee5e5;
 
@@ -78,7 +69,3 @@ body::selection {
   --breakpoint-laptop-l: 1440px;
   --breakpoint-laptop-4k: 2560px;
 }
-
-/* * {
-  outline: 1px solid red;
-} */

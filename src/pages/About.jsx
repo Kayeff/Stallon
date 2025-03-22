@@ -12,6 +12,7 @@ export default function About() {
             className="w-full h-80 object-cover border border-platinium/20 justify-self-center tablet:justify-self-end mobile-l:w-96 laptop:w-[90%] laptop:h-full"
             src={founder}
             alt="founders-img"
+            loading="lazy"
           />
           <div className="w-full flex flex-col gap-2">
             <Para

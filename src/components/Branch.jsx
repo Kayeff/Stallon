@@ -10,7 +10,7 @@ export default function Branch({ branch, handleClick, selectedBranchID }) {
         branch.id === 5 ? "max-mobile-l:col-span-2" : ""
       )}`}
     >
-      <h1 className="text-xl font-clash-grotesk font-semibold uppercase text-center laptop:text-2xl">
+      <h1 className="text-xl font-clash-grotesk font-semibold uppercase text-center laptop:text-3xl">
         {branch.name}
       </h1>
     </button>
