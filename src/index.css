@@ -31,25 +31,6 @@
   opacity: 1;
 }
 
-/* Navigation Buttons */
-.custom-swiper .swiper-button-next,
-.custom-swiper .swiper-button-prev {
-  color: var(--color-platinium);
-  font-size: 24px;
-  transition: all 0.3s ease;
-}
-
-.custom-swiper .swiper-button-next:hover,
-.custom-swiper .swiper-button-prev:hover {
-  color: var(--color-strong-green);
-}
-
-.custom-swiper .swiper-button-next::after,
-.custom-swiper .swiper-button-prev::after {
-  font-size: 28px;
-  font-weight: bold;
-}
-
 body::selection {
   background-color: var(--color-strong-green);
   color: black;
@@ -67,5 +48,4 @@ body::selection {
   --breakpoint-tablet: 768px;
   --breakpoint-laptop: 1024px;
   --breakpoint-laptop-l: 1440px;
-  --breakpoint-laptop-4k: 2560px;
 }

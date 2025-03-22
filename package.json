@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "@remixicon/react": "^4.6.0",
+    "@studio-freight/lenis": "^1.0.42",
     "@tailwindcss/vite": "^4.0.3",
     "framer-motion": "^12.4.1",
     "lenis": "^1.1.20",
