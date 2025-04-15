@@ -1,1 +1,0 @@
-import{j as e}from"./index-ltpiD56y.js";function l({text:t}){return e("p",{className:"text-platinium font-clash-grotesk text-start text-sm tablet-xs:text-sm tablet:text-base laptop:text-lg laptop-l:text-xl laptop-4k:text-2xl",children:t})}export{l as P};
