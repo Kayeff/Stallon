@@ -67,7 +67,7 @@ export default function Form() {
       <div className="w-full flex items-center justify-start col-span-2">
         <Button
           text="Send it"
-          className="border border-strong-green cursor-pointer bg-strong-green text-black font-medium hover:bg-strong-green/10 hover:text-strong-green w-1/2 flex items-center justify-center rounded-full"
+          className="border border-strong-green cursor-pointer bg-strong-green text-black font-medium hover:bg-strong-green/10 hover:text-strong-green w-1/2 flex items-center justify-center"
         />
       </div>
     </form>
