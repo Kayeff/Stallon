@@ -1,26 +1,19 @@
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
-import { ReactLenis } from "lenis/react";
 import ScrollToTop from "./components/ScrollToTop";
-import AnimateRoutes from "./components/AnimateRoutes";
+import SmoothScroll from "./components/SmoothScroll";
+import Home from "./pages/Home";
 
 export default function App() {
   return (
-    <ReactLenis
-      root
-      options={{
-        smooth: true,
-        duration: 0.5,
-        easing: (t) => 1 - Math.pow(1 - t, 2),
-        autoRaf: true,
-      }}
-    >
-      <main className="w-full min-h-[100lvh] bg-black relative flex items-center flex-col">
-        <ScrollToTop />
+    <SmoothScroll>
+      <main className="w-full min-h-[100lvh] bg-black text-platinium relative flex items-center flex-col font-inter">
         <Navbar />
-        <AnimateRoutes />
+        <div className="w-full flex flex-col gap-20 p-4">
+          <Home />
+        </div>
         <Footer />
       </main>
-    </ReactLenis>
+    </SmoothScroll>
   );
 }

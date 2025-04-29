@@ -3,19 +3,18 @@ export default function Amenities({ item }) {
     <div className="w-full flex items-center justify-start flex-col text-platinium border border-strong-green/20">
       <div className="w-full flex items-start justify-center">
         <img
-          className="w-full h-80 object-cover will-change-transform"
+          className="w-full h-80 object-cover"
           src={item.src}
           alt={item.title}
           loading="lazy"
+          rel="preload"
         />
       </div>
       <div className="w-full gap-1 flex justify-center flex-col p-2">
-        <h1 className="font-medium text-3xl uppercase text-strong-green">
+        <h1 className="font-medium tracking-tight text-3xl text-strong-green">
           {item.title}
         </h1>
-        <p className="w-full font-clash-grotesk text-sm laptop:text-base">
-          {item.para}
-        </p>
+        <p className="tracking-tight text-platinium/90">{item.para}</p>
       </div>
     </div>
   );

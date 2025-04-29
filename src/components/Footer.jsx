@@ -1,154 +1,73 @@
-import { NavLink } from "react-router-dom";
-import logo from "../assets/logo.webp";
 import QuickLinks from "./QuickLinks";
+import Logo from "./Logo";
+import FooterCopyright from "./FooterCopyright";
+import { branches } from "../branches";
+
+function FooterLinks({ href, title, security }) {
+  return (
+    <a
+      className="hover:text-strong-green hover:underline tracking-tight"
+      href={href}
+      target="_blank"
+      rel={security && "noopener noreferrer"}
+    >
+      {title}
+    </a>
+  );
+}
 
 export default function Footer() {
   return (
-    <footer className="w-full flex items-start justify-center flex-col gap-10 border-t border-strong-green/20 laptop:items-center">
-      <div className="laptop:w-[90%] w-full grid grid-cols-1 tablet:grid-cols-2 gap-5 p-4">
+    <footer className="w-full flex items-start justify-center flex-col gap-10 border-t border-strong-green/20 laptop:items-center font-inter">
+      <div className="laptop:w-[90%] w-full grid grid-cols-1 tablet:grid-cols-2 gap-5 p-5">
         <div className="flex items-center justify-start flex-col gap-4 tablet-xs:items-start">
-          <NavLink
-            to="/"
-            className="hover:text-strong-green duration-300 flex items-center justify-center tablet:justify-start w-full"
-          >
-            <img
-              className="h-12 object-cover laptop:h-20 laptop-4k:h-32"
-              src={logo}
-              alt=""
-              loading="lazy"
-            />
-          </NavLink>
+          <Logo />
           <QuickLinks title="Connect">
-            <a
-              className="hover:text-strong-green duration-300 transition-colors"
+            <FooterLinks
+              title="+91 7096004208"
               href="tel:7096004208"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <span className="font-clash-grotesk">+91 7096004208</span>
-            </a>
-            <a
-              className="font-medium hover:text-strong-green duration-300 transition-colors"
+              security
+            />
+            <FooterLinks
+              title="stallongym111@gmail.com"
               href="mailto:stallongym111@gmail.com"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <span className="font-clash-grotesk">
-                stallongym111@gmail.com
-              </span>
-            </a>
+              security
+            />
           </QuickLinks>
         </div>
         <div className="w-full grid grid-cols-1 tablet:grid-cols-3 gap-4 sm:gap-8">
           <QuickLinks title="Quick Links">
-            <NavLink
-              to="/about"
-              className="hover:text-strong-green duration-300"
-            >
-              About
-            </NavLink>
-            <NavLink
-              to="/branches"
-              className="hover:text-strong-green duration-300"
-            >
-              Branches
-            </NavLink>
-            <NavLink
-              to="/membership"
-              className="hover:text-strong-green duration-300"
-            >
-              Membership
-            </NavLink>
-            <NavLink
-              to="/blog"
-              className="hover:text-strong-green duration-300"
-            >
-              Blog
-            </NavLink>
-            <NavLink
-              to="/contact"
-              className="hover:text-strong-green duration-300"
-            >
-              Contact
-            </NavLink>
+            <FooterLinks href="#" title="Home" />
+            <FooterLinks href="#" title="About" />
+            <FooterLinks href="#" title="Branches" />
+            <FooterLinks href="#" title="Pricing" />
+            <FooterLinks href="#" title="Contact" />
           </QuickLinks>
-          <QuickLinks title="Branches">
-            <NavLink
-              to="/branches"
-              className="hover:text-strong-green duration-300"
-            >
-              Vesu
-            </NavLink>
-            <NavLink
-              to="/branches"
-              className="hover:text-strong-green duration-300"
-            >
-              Ghod Dod Road
-            </NavLink>
-            <NavLink
-              to="/branches"
-              className="hover:text-strong-green duration-300"
-            >
-              Adajan
-            </NavLink>
-            <NavLink
-              to="/branches"
-              className="hover:text-strong-green duration-300"
-            >
-              VIP Road
-            </NavLink>
-            <NavLink
-              to="/branches"
-              className="hover:text-strong-green duration-300"
-            >
-              Mota Varacha
-            </NavLink>
+          <QuickLinks title="Our Branches">
+            {branches.map((branch) => (
+              <FooterLinks key={branch.id} title={branch.name} href="#" />
+            ))}
           </QuickLinks>
           <QuickLinks title="Socials">
-            <div className="flex items-start justify-center flex-col space-y-1">
-              <a
-                className="hover:text-strong-green duration-300 transition-colors"
-                href="https://www.instagram.com/stallon_gym_official/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Instagram
-              </a>
-              <a
-                className="hover:text-strong-green duration-300 transition-colors"
-                href="https://www.facebook.com/stallongymindia.mediablock.india/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Facebook
-              </a>
-              <a
-                className="hover:text-strong-green duration-300 transition-colors"
-                href="https://www.youtube.com/@StallonGym/featured"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                YouTube
-              </a>
-            </div>
+            <FooterLinks
+              title="Instagram"
+              href="https://www.instagram.com/stallon_gym_official/"
+              security
+            />
+            <FooterLinks
+              title="Facebook"
+              href="https://www.facebook.com/stallongymindia.mediablock.india/"
+              security
+            />
+            <FooterLinks
+              title="YouTube"
+              href="https://www.youtube.com/@StallonGym/featured"
+              security
+            />
           </QuickLinks>
         </div>
       </div>
-      <div className="bg-strong-green w-full px-6 py-4 flex items-center justify-center">
-        <div className="laptop:w-[90%] w-full flex items-center justify-center flex-col tablet:flex-row tablet:justify-between">
-          <h1 className="font-clash-grotesk text-black font-medium">
-            ©2025 Stallon Gym
-          </h1>
-          <div className="flex items-center justify-center space-x-4">
-            <h1 className="font-clash-grotesk text-black font-medium text-sm laptop:text-base">
-              Privacy Policy
-            </h1>
-            <h1 className="font-clash-grotesk text-black font-medium text-sm laptop:text-base">
-              Cookies
-            </h1>
-          </div>
-        </div>
-      </div>
+      <FooterCopyright />
     </footer>
   );
 }
