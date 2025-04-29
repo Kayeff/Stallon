@@ -1,7 +1,6 @@
 import Classes from "./Classes";
 import Heading from "./Heading";
 import { classes } from "../classes";
-import Para from "./Para";
 
 export default function ProgramSection() {
   return (

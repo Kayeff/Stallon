@@ -2,7 +2,7 @@ import Heading from "./Heading";
 import { membership_data } from "../membership";
 import Membership from "./Membership";
 
-export default function AmenitiesSection() {
+export default function PlanPricing() {
   return (
     <section className="w-full gap-8 cursor-default flex items-center justify-center p-10">
       <div className="w-[80%] flex items-center justify-center flex-col gap-5">

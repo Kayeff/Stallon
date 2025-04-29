@@ -5,7 +5,7 @@ import LocationSection from "../components/LocationSection";
 import Contact from "./Contact";
 const AboutGym = lazy(() => import("../components/AboutGym"));
 const ProgramSection = lazy(() => import("../components/ProgramSection"));
-const AmenitiesSection = lazy(() => import("../components/AmenitiesSection"));
+const PlanPricing = lazy(() => import("../components/PlanPricing"));
 const TestimonialSection = lazy(() =>
   import("../components/TestimonialSection")
 );
@@ -17,7 +17,7 @@ export default function Home() {
       <AboutGym />
       <LocationSection />
       <ProgramSection />
-      <AmenitiesSection />
+      <PlanPricing />
       <TestimonialSection />
       <Contact />
     </>
