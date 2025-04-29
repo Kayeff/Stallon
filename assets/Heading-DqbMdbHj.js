@@ -1,1 +1,0 @@
-import{j as e,a}from"./index-BHES6XYp.js";function n({text:t}){return e("span",{className:"text-strong-green",children:t})}function o({title:t,spanText:s}){return a("h1",{className:"text-3xl font-semibold uppercase font-clash-grotesk text-platinium laptop:text-5xl",children:[t," ",e(n,{text:s})]})}export{o as H,n as S};
