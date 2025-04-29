@@ -1,90 +1,22 @@
-import {
-  RiFacebookCircleFill,
-  RiInstagramFill,
-  RiYoutubeFill,
-} from "@remixicon/react";
 import Heading from "../components/Heading";
-import SmallSection from "../components/SmallSection";
-import { branches } from "../branches";
-import LocationLink from "../components/LocationLink";
 import Form from "../components/Form";
 import Para from "../components/Para";
+import interior from "../assets/interior.webp";
 
 export default function Contact() {
   return (
-    <main className="w-full flex items-center justify-start flex-col font-clash-grotesk text-platinium cursor-default mb-10 p-4">
-      <div className="w-full grid grid-cols-1 gap-8 laptop:grid-cols-2 laptop:w-[90%] text-platinium">
-        <div className="flex items-center justify-start laptop:items-start flex-col gap-8 p-2 w-full">
-          <div className="w-full flex items-center laptop:items-start justify-center flex-col gap-2">
-            <Heading title={"Get in"} spanText={"Touch"} />
-            <Para
-              text="We're here to help you on your fitness journey! Whether you have
-            questions about our memberships, training programs, or facilities,
-            feel free to reach out."
-            />
-          </div>
-          <div className="w-full gap-8 flex flex-col">
-            <SmallSection
-              title="Our Branches"
-              className="w-full grid grid-cols-1 tablet:grid-cols-3 gap-4"
-            >
-              {branches.map((branch) => {
-                return <LocationLink branch={branch} key={branch.id} />;
-              })}
-            </SmallSection>
-            <div className="w-full grid grid-cols-1 tablet:grid-cols-2 gap-8">
-              <SmallSection title="Phone or Mail us">
-                <div className="flex items-start justify-start flex-col gap-1">
-                  <a
-                    className="hover:text-strong-green duration-300 transition-colors"
-                    href="tel:7096004208"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <span>+91 7096004208</span>
-                  </a>
-                  <a
-                    className="font-medium hover:text-strong-green duration-300 transition-colors"
-                    href="mailto:stallongym111@gmail.com"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <span>stallongym111@gmail.com</span>
-                  </a>
-                </div>
-              </SmallSection>
-              <SmallSection title="Follow us">
-                <div className="flex items-start justify-start gap-2">
-                  <a
-                    className="hover:text-strong-green duration-300 transition-colors"
-                    href="https://www.instagram.com/stallon_gym_official/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <RiInstagramFill />
-                  </a>
-                  <a
-                    className="hover:text-strong-green duration-300 transition-colors"
-                    href="https://www.facebook.com/stallongymindia.mediablock.india/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <RiFacebookCircleFill />
-                  </a>
-                  <a
-                    className="hover:text-strong-green duration-300 transition-colors"
-                    href="https://www.youtube.com/@StallonGym/featured"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <RiYoutubeFill />
-                  </a>
-                </div>
-              </SmallSection>
-            </div>
-          </div>
-        </div>
-        <div className="w-full flex items-center justify-start flex-col gap-8 p-2">
+    <section className="w-full flex items-center justify-start cursor-default py-20 relative font-inter">
+      <div className="absolute inset-0 z-0">
+        <img
+          className="w-full h-full object-cover"
+          src={interior}
+          alt="hero"
+          loading="lazy"
+          rel="preload"
+        />
+      </div>
+      <div className="w-full flex items-center justify-end z-10">
+        <div className="w-1/2 rounded-l-4xl flex items-center justify-start flex-col gap-8 bg-black p-10">
           <div className="w-full flex items-center laptop:items-start justify-start flex-col gap-4">
             <Heading title="Send us a" spanText="Message" />
             <Para
@@ -95,6 +27,6 @@ export default function Contact() {
           <Form />
         </div>
       </div>
-    </main>
+    </section>
   );
 }

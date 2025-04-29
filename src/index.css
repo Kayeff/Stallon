@@ -15,22 +15,6 @@
   );
 }
 
-/* Pagination Dots */
-.custom-swiper .swiper-pagination-bullet {
-  width: 10px;
-  height: 10px;
-  background-color: var(--color-platinium);
-  border-radius: 50%;
-  opacity: 0.9;
-  transition: all 0.3s ease-in-out;
-}
-
-.custom-swiper .swiper-pagination-bullet-active {
-  background: var(--color-strong-green);
-  transform: scale(1.2);
-  opacity: 1;
-}
-
 body::selection {
   background-color: var(--color-strong-green);
   color: black;

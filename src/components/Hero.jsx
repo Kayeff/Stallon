@@ -5,18 +5,27 @@ import Button from "./Button";
 
 export default function Hero() {
   return (
-    <section className="w-full flex items-center justify-center">
-      <div className="w-[90%] p-5 grid grid-cols-2 gap-6">
-        <div className="w-full flex flex-col gap-2">
-          <div className="flex flex-col items-end">
+    <section className="w-full h-[calc(100vh-96px)] flex items-center justify-center relative">
+      <div className="absolute inset-0 z-0">
+        <img
+          className="w-full h-full object-cover"
+          src={hero}
+          alt="hero"
+          loading="lazy"
+          rel="preload"
+        />
+      </div>
+      <div className="w-full flex items-center justify-end gap-6 z-10">
+        <div className="w-[50%] flex flex-col gap-4 bg-black p-10 rounded-l-4xl">
+          <div className="flex flex-col items-start">
             <Heading title={"Train"} spanText={"Hard."} />
             <Heading title={"Stay"} spanText={"Strong."} />
             <Heading title={"Be"} spanText={"Unstoppable."} />
           </div>
           <Para
-            text="From strength training and functional workouts to cardio and group
+            text="Welcome to Stallon Gym. From strength training and functional workouts to cardio and group
               sessions, we have everything you need to transform your body and
-              mind. Take the first step towards a healthier and stronger you!"
+              mind. Take the first step towards a healthier and stronger you. Join us today!"
           />
           <div className="w-full flex items-center justify-end gap-1">
             <Button
@@ -24,15 +33,6 @@ export default function Hero() {
               className="bg-platinium text-black border-platinium hover:bg-strong-green hover:text-black hover:border-strong-green rounded-full"
             />
           </div>
-        </div>
-        <div className="w-full flex items-center justify-center">
-          <img
-            src={hero}
-            rel="preload"
-            loading="lazy"
-            className="w-full h-96 object-cover"
-            alt="hero"
-          />
         </div>
       </div>
     </section>

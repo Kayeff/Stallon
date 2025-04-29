@@ -17,13 +17,15 @@ export default function Navbar() {
   }
 
   return (
-    <nav className="w-full text-platinium bg-black flex items-center justify-center sticky inset-0 z-10 border-b border-platinium/20">
+    <nav className="w-full text-platinium bg-black flex items-center justify-center sticky inset-0 z-20 border-b border-platinium/20">
       <div className="w-[90%] p-5 flex items-center justify-between z-30">
-        <Logo size="h-14" />
+        <div>
+          <Logo size="h-14" />
+        </div>
         <ul className="hidden font-clash-grotesk items-center justify-center tablet:flex gap-4 laptop:gap-8">
           <NavbarLink href="/" title="Home" />
           <NavbarLink href="/about" title="About" />
-          <NavbarLink href="/branches" title="Branches" />
+          {/* <NavbarLink href="/branches" title="Branches" /> */}
           <NavbarLink href="/pricing" title="Pricing" />
           <NavbarLink href="/contact" title="Contact" />
         </ul>
