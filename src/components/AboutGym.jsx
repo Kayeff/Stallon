@@ -12,7 +12,6 @@ export default function AboutGym() {
           src={about}
           alt="hero"
           loading="lazy"
-          rel="preload"
         />
       </div>
       <div className="w-full flex items-center justify-end gap-6 z-10 p-10">

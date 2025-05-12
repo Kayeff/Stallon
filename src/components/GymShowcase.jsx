@@ -1,5 +1,3 @@
-import Images from "./Images";
-
 export default function GymShowcase({ branch }) {
   return (
     <div className="w-full flex justify-center items-center flex-col border border-strong-green/20">
@@ -7,11 +5,7 @@ export default function GymShowcase({ branch }) {
         <h1 className="font-medium uppercase font-clash-grotesk text-platinium text-2xl laptop:text-4xl">
           Gym
         </h1>
-        <div className="grid grid-cols-1 gap-2 tablet:grid-cols-2 laptop:grid-cols-3">
-          {branch.showcase.map((item, index) => (
-            <Images key={`branchshowcase-${index + 1}`} img={item} />
-          ))}
-        </div>
+        <div className="grid grid-cols-1 gap-2 tablet:grid-cols-2 laptop:grid-cols-3"></div>
       </div>
     </div>
   );

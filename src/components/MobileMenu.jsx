@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { navbar_links } from "../navbar_links";
-import NavbarLink from "./NavbarLink";
 import { socials } from "../socials";
+import { NavLink } from "react-router-dom";
 
 const menuVariants = {
   hidden: { top: "-100vh" },
@@ -59,7 +59,7 @@ export default function MobileMenu({ onClick }) {
               whileTap={{ scale: 0.95 }}
               onClick={onClick}
             >
-              <NavbarLink href={link.href} title={link.title} />
+              <NavLink to={link.href}>{link.title}</NavLink>
             </motion.li>
           ))}
         </motion.ul>

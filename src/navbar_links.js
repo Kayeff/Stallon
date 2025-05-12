@@ -1,8 +1,6 @@
-export const navbar_links = [
-  { href: "/", title: "Home" },
-  { href: "/about", title: "About" },
-  { href: "/branches", title: "Branches" },
-  { href: "/pricing", title: "Pricing" },
-  { href: "/blog", title: "Blog" },
-  { href: "/contact", title: "Contact" },
+export const navLink = [
+  { linkTitle: "Home", to: "" },
+  { linkTitle: "About", to: "about" },
+  { linkTitle: "Branches", to: "branches" },
+  { linkTitle: "Contact", to: "contact" },
 ];

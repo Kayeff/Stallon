@@ -12,11 +12,10 @@ export default function Contact() {
           src={interior}
           alt="hero"
           loading="lazy"
-          rel="preload"
         />
       </div>
-      <div className="w-full flex items-center justify-start z-10">
-        <div className="w-1/2 flex items-center justify-start flex-col gap-8 p-10">
+      <div className="w-[90%] grid grid-cols-2 z-10">
+        <div className="w-full flex items-center justify-center flex-col gap-8 p-10">
           <div className="w-full flex items-center laptop:items-start justify-start flex-col gap-4">
             <Heading title="Send us a" spanText="Message" />
             <Para

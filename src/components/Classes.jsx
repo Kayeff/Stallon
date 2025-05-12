@@ -14,9 +14,8 @@ export default function Classes({ item }) {
         <img
           src={item.src}
           alt={item.title}
-          className="object-cover h-52 w-full rounded-r-2xl"
+          className="object-cover h-72 w-full rounded-r-2xl"
           loading="lazy"
-          rel="preload"
         />
       </div>
     </div>
