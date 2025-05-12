@@ -7,6 +7,7 @@ export const testimonial_data = [
     time: "1 year ago",
     para: "Personally recommend for everyone who loves to build healthy Lifestyle and best workout place in Surat. Staff is very nice to everyone. Just one word - OUTSTANDING !!",
     stars: 4.5,
+    span: true,
   },
   {
     id: 2,
@@ -16,6 +17,7 @@ export const testimonial_data = [
     time: "1 month ago",
     para: "Awesome gym in Adajan gam for improvement body all exercising tools are available over their with good trainers. Thanks Stallon Gym Service which i found.",
     stars: 5,
+    span: false,
   },
   {
     id: 3,
@@ -25,6 +27,7 @@ export const testimonial_data = [
     time: "1 year ago",
     para: "Good gym with all equipments and very helpful trainers. Avoid working out during peak hrs in morning and evenings. A lot of rush Rest all good",
     stars: 5,
+    span: false,
   },
   {
     id: 4,
@@ -34,6 +37,7 @@ export const testimonial_data = [
     time: "6 months ago",
     para: "I am enjoying my daily gym workout with the help of trainers...they are helpful in nature.gym has different activities every week like Zumba session and compitition.",
     stars: 5,
+    span: false,
   },
   {
     id: 5,
@@ -43,5 +47,6 @@ export const testimonial_data = [
     time: "6 months ago",
     para: "Great gym in mota Varachha 🔥🤙🏻 they enough space for their member and equipments are of good quality.. and good trainers 👍❤️",
     stars: 5,
+    span: false,
   },
 ];

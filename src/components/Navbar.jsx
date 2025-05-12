@@ -1,5 +1,5 @@
 import Logo from "./Logo";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import SlideMenu from "./SlideMenu";
 import ToggleButton from "./ToggleButton";
 

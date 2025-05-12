@@ -5,15 +5,7 @@ import interior from "../assets/interior.webp";
 
 export default function Contact() {
   return (
-    <section className="w-full flex items-center justify-start cursor-default py-20 relative font-inter">
-      <div className="absolute inset-0 z-0">
-        <img
-          className="w-full h-full object-cover opacity-70"
-          src={interior}
-          alt="hero"
-          loading="lazy"
-        />
-      </div>
+    <section className="w-full flex items-center justify-center cursor-default py-20 relative font-inter">
       <div className="w-[90%] grid grid-cols-2 z-10">
         <div className="w-full flex items-center justify-center flex-col gap-8 p-10">
           <div className="w-full flex items-center laptop:items-start justify-start flex-col gap-4">
@@ -24,6 +16,14 @@ export default function Contact() {
             />
           </div>
           <Form />
+        </div>
+        <div className="w-full items-center justify-center">
+          <img
+            className="w-full h-full object-cover opacity-70"
+            src={interior}
+            alt="hero"
+            loading="lazy"
+          />
         </div>
       </div>
     </section>

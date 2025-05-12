@@ -2,6 +2,8 @@ import QuickLinks from "./QuickLinks";
 import Logo from "./Logo";
 import FooterCopyright from "./FooterCopyright";
 import { branches } from "../branches";
+import { navLink } from "../navbar_links";
+import { Link } from "react-router-dom";
 
 function FooterLinks({ href, title, security }) {
   return (
@@ -37,11 +39,18 @@ export default function Footer() {
         </div>
         <div className="w-full grid grid-cols-1 tablet:grid-cols-3 gap-4 sm:gap-8">
           <QuickLinks title="Quick Links">
-            <FooterLinks href="#" title="Home" />
-            <FooterLinks href="#" title="About" />
-            <FooterLinks href="#" title="Branches" />
-            <FooterLinks href="#" title="Pricing" />
-            <FooterLinks href="#" title="Contact" />
+            <ul>
+              {navLink.map((link) => (
+                <li key={link.linkTitle}>
+                  <Link
+                    className="hover:underline hover:text-strong-green"
+                    to={link.to}
+                  >
+                    {link.linkTitle}
+                  </Link>
+                </li>
+              ))}
+            </ul>
           </QuickLinks>
           <QuickLinks title="Our Branches">
             {branches.map((branch) => (

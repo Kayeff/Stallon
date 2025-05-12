@@ -7,12 +7,14 @@ import Home from "./pages/Home.jsx";
 import About from "./pages/About.jsx";
 import Contact from "./pages/Contact.jsx";
 import Branches from "./pages/Branches.jsx";
+import ErrorPage from "./pages/ErrorPage.jsx";
 
 const routes = createBrowserRouter(
   [
     {
       path: "/",
       element: <App />,
+      errorElement: <ErrorPage />,
       children: [
         { index: true, element: <Home /> },
         { path: "about", element: <About /> },
